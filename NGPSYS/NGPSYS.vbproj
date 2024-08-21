@@ -1,0 +1,95 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <StartupObject>Sub Main</StartupObject>
+    <UseWindowsForms>true</UseWindowsForms>
+    <MyType>WindowsForms</MyType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CrystalReports.ReportSource" Version="13.0.4003" />
+    <PackageReference Include="iTextSharp" Version="5.5.13.4" />
+    <PackageReference Include="MySql.Data" Version="8.1.0" />
+    <PackageReference Include="ReportViewerCore.WinForms" Version="15.1.19" />
+    <PackageReference Include="WinForms.DataVisualization" Version="1.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="DB\ngpDB.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ngpDB.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DB\Seedlingpro.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Seedlingpro.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DB\year2DB.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>year2DB.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="DB\year3DB.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>year3DB.xsd</DependentUpon>
+    </Compile>
+    <Compile Update="mainform\maindash.vb" />
+    <Compile Update="My Project\Application.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Update="My Project\Resources.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="DB\ngpDB.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ngpDB.Designer.vb</LastGenOutput>
+    </None>
+    <None Update="DB\Seedlingpro.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Seedlingpro.Designer.vb</LastGenOutput>
+    </None>
+    <None Update="DB\year2DB.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>year2DB.Designer.vb</LastGenOutput>
+    </None>
+    <None Update="DB\year3DB.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>year3DB.Designer.vb</LastGenOutput>
+    </None>
+    <None Update="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Year1\NewFolder\" />
+    <Folder Include="Year3\Disbursement\" />
+  </ItemGroup>
+
+</Project>
