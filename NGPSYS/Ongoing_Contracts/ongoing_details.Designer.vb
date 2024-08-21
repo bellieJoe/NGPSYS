@@ -229,10 +229,10 @@ Partial Class ongoing_details
         Panel1.Controls.Add(txtactual)
         Panel1.Controls.Add(Label10)
         Panel1.Font = New Font("Microsoft Sans Serif", 7.8F, FontStyle.Regular, GraphicsUnit.Point)
-        Panel1.Location = New Point(12, 80)
+        Panel1.Location = New Point(12, 101)
         Panel1.Margin = New Padding(3, 2, 3, 2)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(1337, 809)
+        Panel1.Size = New Size(1337, 822)
         Panel1.TabIndex = 123
         ' 
         ' btnUploadDoc
@@ -255,7 +255,7 @@ Partial Class ongoing_details
         Label40.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label40.Location = New Point(363, 163)
         Label40.Name = "Label40"
-        Label40.Size = New Size(92, 18)
+        Label40.Size = New Size(113, 20)
         Label40.TabIndex = 235
         Label40.Text = "Polygon Code :"
         ' 
@@ -268,7 +268,7 @@ Partial Class ongoing_details
         txtpolycode.Margin = New Padding(3, 2, 3, 2)
         txtpolycode.Name = "txtpolycode"
         txtpolycode.ReadOnly = True
-        txtpolycode.Size = New Size(98, 23)
+        txtpolycode.Size = New Size(98, 27)
         txtpolycode.TabIndex = 234
         ' 
         ' Label39
@@ -279,7 +279,7 @@ Partial Class ongoing_details
         Label39.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label39.Location = New Point(627, 516)
         Label39.Name = "Label39"
-        Label39.Size = New Size(93, 18)
+        Label39.Size = New Size(115, 20)
         Label39.TabIndex = 232
         Label39.Text = "Gross Amount :"
         ' 
@@ -292,7 +292,7 @@ Partial Class ongoing_details
         txtgrossamount.Margin = New Padding(3, 2, 3, 2)
         txtgrossamount.Name = "txtgrossamount"
         txtgrossamount.ReadOnly = True
-        txtgrossamount.Size = New Size(170, 23)
+        txtgrossamount.Size = New Size(170, 27)
         txtgrossamount.TabIndex = 233
         ' 
         ' Label37
@@ -303,7 +303,7 @@ Partial Class ongoing_details
         Label37.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label37.Location = New Point(375, 196)
         Label37.Name = "Label37"
-        Label37.Size = New Size(81, 18)
+        Label37.Size = New Size(101, 20)
         Label37.TabIndex = 230
         Label37.Text = "No. of Sites :"
         ' 
@@ -317,7 +317,7 @@ Partial Class ongoing_details
         txtcountpoly.Multiline = True
         txtcountpoly.Name = "txtcountpoly"
         txtcountpoly.ReadOnly = True
-        txtcountpoly.Size = New Size(99, 27)
+        txtcountpoly.Size = New Size(99, 40)
         txtcountpoly.TabIndex = 231
         txtcountpoly.Text = "1"
         ' 
@@ -326,7 +326,7 @@ Partial Class ongoing_details
         Label38.AutoSize = True
         Label38.Location = New Point(946, 301)
         Label38.Name = "Label38"
-        Label38.Size = New Size(296, 13)
+        Label38.Size = New Size(367, 16)
         Label38.TabIndex = 229
         Label38.Text = "it indicates that year 3 maintenance and protection is ongoing"
         ' 
@@ -335,7 +335,7 @@ Partial Class ongoing_details
         Label36.AutoSize = True
         Label36.Location = New Point(1058, 282)
         Label36.Name = "Label36"
-        Label36.Size = New Size(125, 13)
+        Label36.Size = New Size(153, 16)
         Label36.TabIndex = 227
         Label36.Text = "If no survival rating exists"
         ' 
@@ -396,7 +396,7 @@ Partial Class ongoing_details
         Label33.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label33.Location = New Point(627, 326)
         Label33.Name = "Label33"
-        Label33.Size = New Size(130, 18)
+        Label33.Size = New Size(163, 20)
         Label33.TabIndex = 221
         Label33.Text = "Project Cost (3 years)"
         ' 
@@ -409,7 +409,7 @@ Partial Class ongoing_details
         txtprojectcost.Margin = New Padding(3, 2, 3, 2)
         txtprojectcost.Name = "txtprojectcost"
         txtprojectcost.ReadOnly = True
-        txtprojectcost.Size = New Size(288, 23)
+        txtprojectcost.Size = New Size(288, 27)
         txtprojectcost.TabIndex = 222
         ' 
         ' GroupBox2
@@ -434,7 +434,7 @@ Partial Class ongoing_details
         txtunder.Margin = New Padding(3, 2, 3, 2)
         txtunder.Name = "txtunder"
         txtunder.ReadOnly = True
-        txtunder.Size = New Size(346, 23)
+        txtunder.Size = New Size(346, 27)
         txtunder.TabIndex = 222
         ' 
         ' txtcip
@@ -446,7 +446,7 @@ Partial Class ongoing_details
         txtcip.Margin = New Padding(3, 2, 3, 2)
         txtcip.Name = "txtcip"
         txtcip.ReadOnly = True
-        txtcip.Size = New Size(346, 23)
+        txtcip.Size = New Size(346, 27)
         txtcip.TabIndex = 221
         ' 
         ' Label34
@@ -457,7 +457,7 @@ Partial Class ongoing_details
         Label34.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label34.Location = New Point(19, 112)
         Label34.Name = "Label34"
-        Label34.Size = New Size(172, 18)
+        Label34.Size = New Size(217, 20)
         Label34.TabIndex = 216
         Label34.Text = "Amount Underdevelopment :"
         ' 
@@ -469,7 +469,7 @@ Partial Class ongoing_details
         Label35.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label35.Location = New Point(19, 28)
         Label35.Name = "Label35"
-        Label35.Size = New Size(122, 18)
+        Label35.Size = New Size(149, 20)
         Label35.TabIndex = 33
         Label35.Text = "Amount still in CIP :"
         ' 
@@ -496,7 +496,7 @@ Partial Class ongoing_details
         Label23.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label23.Location = New Point(14, 127)
         Label23.Name = "Label23"
-        Label23.Size = New Size(106, 18)
+        Label23.Size = New Size(130, 20)
         Label23.TabIndex = 218
         Label23.Text = "Adopting Entity :"
         ' 
@@ -507,7 +507,7 @@ Partial Class ongoing_details
         dateupdated.Location = New Point(154, 34)
         dateupdated.Margin = New Padding(3, 2, 3, 2)
         dateupdated.Name = "dateupdated"
-        dateupdated.Size = New Size(342, 23)
+        dateupdated.Size = New Size(342, 27)
         dateupdated.TabIndex = 34
         ' 
         ' Label21
@@ -518,7 +518,7 @@ Partial Class ongoing_details
         Label21.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label21.Location = New Point(14, 34)
         Label21.Name = "Label21"
-        Label21.Size = New Size(93, 18)
+        Label21.Size = New Size(118, 20)
         Label21.TabIndex = 33
         Label21.Text = "Date Updated :"
         ' 
@@ -531,7 +531,7 @@ Partial Class ongoing_details
         TxtAe.Margin = New Padding(3, 2, 3, 2)
         TxtAe.Name = "TxtAe"
         TxtAe.ReadOnly = True
-        TxtAe.Size = New Size(342, 23)
+        TxtAe.Size = New Size(342, 27)
         TxtAe.TabIndex = 219
         ' 
         ' txtstatus
@@ -543,7 +543,7 @@ Partial Class ongoing_details
         txtstatus.Margin = New Padding(3, 2, 3, 2)
         txtstatus.Name = "txtstatus"
         txtstatus.ReadOnly = True
-        txtstatus.Size = New Size(342, 23)
+        txtstatus.Size = New Size(342, 27)
         txtstatus.TabIndex = 217
         ' 
         ' Label22
@@ -554,7 +554,7 @@ Partial Class ongoing_details
         Label22.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label22.Location = New Point(14, 83)
         Label22.Name = "Label22"
-        Label22.Size = New Size(50, 18)
+        Label22.Size = New Size(63, 20)
         Label22.TabIndex = 216
         Label22.Text = "Status :"
         ' 
@@ -566,7 +566,7 @@ Partial Class ongoing_details
         Label20.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label20.Location = New Point(625, 474)
         Label20.Name = "Label20"
-        Label20.Size = New Size(80, 18)
+        Label20.Size = New Size(99, 20)
         Label20.TabIndex = 213
         Label20.Text = "Year 3 Cost :"
         ' 
@@ -579,7 +579,7 @@ Partial Class ongoing_details
         txtyear3.Margin = New Padding(3, 2, 3, 2)
         txtyear3.Name = "txtyear3"
         txtyear3.ReadOnly = True
-        txtyear3.Size = New Size(170, 23)
+        txtyear3.Size = New Size(170, 27)
         txtyear3.TabIndex = 214
         ' 
         ' Label15
@@ -590,7 +590,7 @@ Partial Class ongoing_details
         Label15.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label15.Location = New Point(625, 431)
         Label15.Name = "Label15"
-        Label15.Size = New Size(80, 18)
+        Label15.Size = New Size(99, 20)
         Label15.TabIndex = 211
         Label15.Text = "Year 2 Cost :"
         ' 
@@ -603,7 +603,7 @@ Partial Class ongoing_details
         txtyear2.Margin = New Padding(3, 2, 3, 2)
         txtyear2.Name = "txtyear2"
         txtyear2.ReadOnly = True
-        txtyear2.Size = New Size(170, 23)
+        txtyear2.Size = New Size(170, 27)
         txtyear2.TabIndex = 212
         ' 
         ' Label9
@@ -614,7 +614,7 @@ Partial Class ongoing_details
         Label9.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label9.Location = New Point(625, 388)
         Label9.Name = "Label9"
-        Label9.Size = New Size(80, 18)
+        Label9.Size = New Size(99, 20)
         Label9.TabIndex = 209
         Label9.Text = "Year 1 Cost :"
         ' 
@@ -627,7 +627,7 @@ Partial Class ongoing_details
         txtyear1.Margin = New Padding(3, 2, 3, 2)
         txtyear1.Name = "txtyear1"
         txtyear1.ReadOnly = True
-        txtyear1.Size = New Size(170, 23)
+        txtyear1.Size = New Size(170, 27)
         txtyear1.TabIndex = 210
         ' 
         ' Label1
@@ -637,7 +637,7 @@ Partial Class ongoing_details
         Label1.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label1.Location = New Point(29, 63)
         Label1.Name = "Label1"
-        Label1.Size = New Size(133, 18)
+        Label1.Size = New Size(167, 20)
         Label1.TabIndex = 11
         Label1.Text = "Project Unique Code :"
         ' 
@@ -646,7 +646,7 @@ Partial Class ongoing_details
         lblprimarykey.AutoSize = True
         lblprimarykey.Location = New Point(333, 683)
         lblprimarykey.Name = "lblprimarykey"
-        lblprimarykey.Size = New Size(45, 13)
+        lblprimarykey.Size = New Size(55, 16)
         lblprimarykey.TabIndex = 128
         lblprimarykey.Text = "Label16"
         lblprimarykey.Visible = False
@@ -660,7 +660,7 @@ Partial Class ongoing_details
         MenuStrip1.Location = New Point(0, 0)
         MenuStrip1.Name = "MenuStrip1"
         MenuStrip1.RenderMode = ToolStripRenderMode.Professional
-        MenuStrip1.Size = New Size(1337, 24)
+        MenuStrip1.Size = New Size(1337, 28)
         MenuStrip1.TabIndex = 189
         MenuStrip1.Text = "MenuStrip1"
         ' 
@@ -668,21 +668,21 @@ Partial Class ongoing_details
         ' 
         ComprehensiveToolStripMenuItem.ForeColor = Color.White
         ComprehensiveToolStripMenuItem.Name = "ComprehensiveToolStripMenuItem"
-        ComprehensiveToolStripMenuItem.Size = New Size(211, 20)
+        ComprehensiveToolStripMenuItem.Size = New Size(259, 24)
         ComprehensiveToolStripMenuItem.Text = "Comprehensive Site Development"
         ' 
         ' NdYearMaintenanceAndProtectionToolStripMenuItem
         ' 
         NdYearMaintenanceAndProtectionToolStripMenuItem.ForeColor = Color.White
         NdYearMaintenanceAndProtectionToolStripMenuItem.Name = "NdYearMaintenanceAndProtectionToolStripMenuItem"
-        NdYearMaintenanceAndProtectionToolStripMenuItem.Size = New Size(227, 20)
+        NdYearMaintenanceAndProtectionToolStripMenuItem.Size = New Size(285, 24)
         NdYearMaintenanceAndProtectionToolStripMenuItem.Text = "2nd Year Maintenance and Protection"
         ' 
         ' RdYearMaintenanceAndProtectionToolStripMenuItem
         ' 
         RdYearMaintenanceAndProtectionToolStripMenuItem.ForeColor = Color.White
         RdYearMaintenanceAndProtectionToolStripMenuItem.Name = "RdYearMaintenanceAndProtectionToolStripMenuItem"
-        RdYearMaintenanceAndProtectionToolStripMenuItem.Size = New Size(225, 20)
+        RdYearMaintenanceAndProtectionToolStripMenuItem.Size = New Size(282, 24)
         RdYearMaintenanceAndProtectionToolStripMenuItem.Text = "3rd Year Maintenance and Protection"
         ' 
         ' MaintenanceToolStripMenuItem
@@ -690,31 +690,31 @@ Partial Class ongoing_details
         MaintenanceToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {AddDateOfTurnOverToolStripMenuItem, AddDateOfPVDToolStripMenuItem, AddDisturbancesToolStripMenuItem, AddSurvivalRateToolStripMenuItem})
         MaintenanceToolStripMenuItem.ForeColor = Color.White
         MaintenanceToolStripMenuItem.Name = "MaintenanceToolStripMenuItem"
-        MaintenanceToolStripMenuItem.Size = New Size(74, 20)
+        MaintenanceToolStripMenuItem.Size = New Size(91, 24)
         MaintenanceToolStripMenuItem.Text = "Execution"
         ' 
         ' AddDateOfTurnOverToolStripMenuItem
         ' 
         AddDateOfTurnOverToolStripMenuItem.Name = "AddDateOfTurnOverToolStripMenuItem"
-        AddDateOfTurnOverToolStripMenuItem.Size = New Size(200, 22)
+        AddDateOfTurnOverToolStripMenuItem.Size = New Size(250, 26)
         AddDateOfTurnOverToolStripMenuItem.Text = "Add Date of Turn Over"
         ' 
         ' AddDateOfPVDToolStripMenuItem
         ' 
         AddDateOfPVDToolStripMenuItem.Name = "AddDateOfPVDToolStripMenuItem"
-        AddDateOfPVDToolStripMenuItem.Size = New Size(200, 22)
+        AddDateOfPVDToolStripMenuItem.Size = New Size(250, 26)
         AddDateOfPVDToolStripMenuItem.Text = "Add Date of PVD"
         ' 
         ' AddDisturbancesToolStripMenuItem
         ' 
         AddDisturbancesToolStripMenuItem.Name = "AddDisturbancesToolStripMenuItem"
-        AddDisturbancesToolStripMenuItem.Size = New Size(200, 22)
+        AddDisturbancesToolStripMenuItem.Size = New Size(250, 26)
         AddDisturbancesToolStripMenuItem.Text = "Add Disturbances"
         ' 
         ' AddSurvivalRateToolStripMenuItem
         ' 
         AddSurvivalRateToolStripMenuItem.Name = "AddSurvivalRateToolStripMenuItem"
-        AddSurvivalRateToolStripMenuItem.Size = New Size(200, 22)
+        AddSurvivalRateToolStripMenuItem.Size = New Size(250, 26)
         AddSurvivalRateToolStripMenuItem.Text = "Add Survival Rate"
         ' 
         ' MaintenanceToolStripMenuItem1
@@ -722,96 +722,96 @@ Partial Class ongoing_details
         MaintenanceToolStripMenuItem1.DropDownItems.AddRange(New ToolStripItem() {StatusOfRegistryToolStripMenuItem, ForestDisturbancesToolStripMenuItem, StatusOfTheSiteToolStripMenuItem, ProjectCostToolStripMenuItem, NoOfSitesToolStripMenuItem})
         MaintenanceToolStripMenuItem1.ForeColor = Color.White
         MaintenanceToolStripMenuItem1.Name = "MaintenanceToolStripMenuItem1"
-        MaintenanceToolStripMenuItem1.Size = New Size(91, 20)
+        MaintenanceToolStripMenuItem1.Size = New Size(113, 24)
         MaintenanceToolStripMenuItem1.Text = "Maintenance"
         ' 
         ' StatusOfRegistryToolStripMenuItem
         ' 
         StatusOfRegistryToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {addstatus, viewstatus})
         StatusOfRegistryToolStripMenuItem.Name = "StatusOfRegistryToolStripMenuItem"
-        StatusOfRegistryToolStripMenuItem.Size = New Size(184, 22)
+        StatusOfRegistryToolStripMenuItem.Size = New Size(231, 26)
         StatusOfRegistryToolStripMenuItem.Text = "Status of Registry"
         ' 
         ' addstatus
         ' 
         addstatus.Name = "addstatus"
-        addstatus.Size = New Size(101, 22)
+        addstatus.Size = New Size(124, 26)
         addstatus.Text = "add"
         ' 
         ' viewstatus
         ' 
         viewstatus.Name = "viewstatus"
-        viewstatus.Size = New Size(101, 22)
+        viewstatus.Size = New Size(124, 26)
         viewstatus.Text = "view"
         ' 
         ' ForestDisturbancesToolStripMenuItem
         ' 
         ForestDisturbancesToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {adddisturbance, viewdisturbance})
         ForestDisturbancesToolStripMenuItem.Name = "ForestDisturbancesToolStripMenuItem"
-        ForestDisturbancesToolStripMenuItem.Size = New Size(184, 22)
+        ForestDisturbancesToolStripMenuItem.Size = New Size(231, 26)
         ForestDisturbancesToolStripMenuItem.Text = "Forest Disturbances"
         ' 
         ' adddisturbance
         ' 
         adddisturbance.Name = "adddisturbance"
-        adddisturbance.Size = New Size(102, 22)
+        adddisturbance.Size = New Size(126, 26)
         adddisturbance.Text = "Add"
         ' 
         ' viewdisturbance
         ' 
         viewdisturbance.Name = "viewdisturbance"
-        viewdisturbance.Size = New Size(102, 22)
+        viewdisturbance.Size = New Size(126, 26)
         viewdisturbance.Text = "View"
         ' 
         ' StatusOfTheSiteToolStripMenuItem
         ' 
         StatusOfTheSiteToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {addsitestatus, viewsitestatus})
         StatusOfTheSiteToolStripMenuItem.Name = "StatusOfTheSiteToolStripMenuItem"
-        StatusOfTheSiteToolStripMenuItem.Size = New Size(184, 22)
+        StatusOfTheSiteToolStripMenuItem.Size = New Size(231, 26)
         StatusOfTheSiteToolStripMenuItem.Text = "Status of the Sites"
         ' 
         ' addsitestatus
         ' 
         addsitestatus.Name = "addsitestatus"
-        addsitestatus.Size = New Size(102, 22)
+        addsitestatus.Size = New Size(126, 26)
         addsitestatus.Text = "Add"
         ' 
         ' viewsitestatus
         ' 
         viewsitestatus.Name = "viewsitestatus"
-        viewsitestatus.Size = New Size(102, 22)
+        viewsitestatus.Size = New Size(126, 26)
         viewsitestatus.Text = "View"
         ' 
         ' ProjectCostToolStripMenuItem
         ' 
         ProjectCostToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {addprojectcost, viewprojectcost})
         ProjectCostToolStripMenuItem.Name = "ProjectCostToolStripMenuItem"
-        ProjectCostToolStripMenuItem.Size = New Size(184, 22)
+        ProjectCostToolStripMenuItem.Size = New Size(231, 26)
         ProjectCostToolStripMenuItem.Text = "Project Cost"
         ' 
         ' addprojectcost
         ' 
         addprojectcost.Name = "addprojectcost"
-        addprojectcost.Size = New Size(102, 22)
+        addprojectcost.Size = New Size(126, 26)
         addprojectcost.Text = "Add"
         ' 
         ' viewprojectcost
         ' 
         viewprojectcost.Name = "viewprojectcost"
-        viewprojectcost.Size = New Size(102, 22)
+        viewprojectcost.Size = New Size(126, 26)
         viewprojectcost.Text = "View"
         ' 
         ' NoOfSitesToolStripMenuItem
         ' 
         NoOfSitesToolStripMenuItem.DropDownItems.AddRange(New ToolStripItem() {addpoly})
         NoOfSitesToolStripMenuItem.Name = "NoOfSitesToolStripMenuItem"
-        NoOfSitesToolStripMenuItem.Size = New Size(184, 22)
+        NoOfSitesToolStripMenuItem.Size = New Size(231, 26)
         NoOfSitesToolStripMenuItem.Text = "Polygon Covered"
         ' 
         ' addpoly
         ' 
         addpoly.Name = "addpoly"
-        addpoly.Size = New Size(96, 22)
+        addpoly.Size = New Size(121, 26)
         addpoly.Text = "Add"
         ' 
         ' Label2
@@ -822,7 +822,7 @@ Partial Class ongoing_details
         Label2.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label2.Location = New Point(629, 60)
         Label2.Name = "Label2"
-        Label2.Size = New Size(41, 18)
+        Label2.Size = New Size(51, 20)
         Label2.TabIndex = 13
         Label2.Text = "Year :"
         ' 
@@ -835,7 +835,7 @@ Partial Class ongoing_details
         txtuniquecode.Margin = New Padding(3, 2, 3, 2)
         txtuniquecode.Name = "txtuniquecode"
         txtuniquecode.ReadOnly = True
-        txtuniquecode.Size = New Size(379, 23)
+        txtuniquecode.Size = New Size(379, 27)
         txtuniquecode.TabIndex = 188
         ' 
         ' condistricttxt
@@ -846,7 +846,7 @@ Partial Class ongoing_details
         condistricttxt.Margin = New Padding(3, 2, 3, 2)
         condistricttxt.Name = "condistricttxt"
         condistricttxt.ReadOnly = True
-        condistricttxt.Size = New Size(170, 23)
+        condistricttxt.Size = New Size(170, 27)
         condistricttxt.TabIndex = 146
         ' 
         ' Label3
@@ -857,7 +857,7 @@ Partial Class ongoing_details
         Label3.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label3.Location = New Point(29, 272)
         Label3.Name = "Label3"
-        Label3.Size = New Size(65, 18)
+        Label3.Size = New Size(79, 20)
         Label3.TabIndex = 16
         Label3.Text = "Location :"
         ' 
@@ -868,7 +868,7 @@ Partial Class ongoing_details
         Label25.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label25.Location = New Point(629, 128)
         Label25.Name = "Label25"
-        Label25.Size = New Size(58, 18)
+        Label25.Size = New Size(70, 20)
         Label25.TabIndex = 147
         Label25.Text = "District :"
         ' 
@@ -879,7 +879,7 @@ Partial Class ongoing_details
         Label24.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label24.Location = New Point(629, 94)
         Label24.Name = "Label24"
-        Label24.Size = New Size(58, 18)
+        Label24.Size = New Size(72, 20)
         Label24.TabIndex = 145
         Label24.Text = "Region : "
         ' 
@@ -891,7 +891,7 @@ Partial Class ongoing_details
         Label6.Font = New Font("Trebuchet MS", 7.8F, FontStyle.Bold, GraphicsUnit.Point)
         Label6.Location = New Point(472, 301)
         Label6.Name = "Label6"
-        Label6.Size = New Size(55, 16)
+        Label6.Size = New Size(62, 18)
         Label6.TabIndex = 22
         Label6.Text = "Province"
         ' 
@@ -904,7 +904,7 @@ Partial Class ongoing_details
         txtprovince.Margin = New Padding(3, 2, 3, 2)
         txtprovince.Name = "txtprovince"
         txtprovince.ReadOnly = True
-        txtprovince.Size = New Size(142, 23)
+        txtprovince.Size = New Size(142, 27)
         txtprovince.TabIndex = 19
         ' 
         ' txtconregion
@@ -915,7 +915,7 @@ Partial Class ongoing_details
         txtconregion.Margin = New Padding(3, 2, 3, 2)
         txtconregion.Name = "txtconregion"
         txtconregion.ReadOnly = True
-        txtconregion.Size = New Size(170, 23)
+        txtconregion.Size = New Size(170, 27)
         txtconregion.TabIndex = 144
         ' 
         ' Label27
@@ -925,7 +925,7 @@ Partial Class ongoing_details
         Label27.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label27.Location = New Point(31, 129)
         Label27.Name = "Label27"
-        Label27.Size = New Size(100, 18)
+        Label27.Size = New Size(125, 20)
         Label27.TabIndex = 162
         Label27.Text = "Contact Person :"
         ' 
@@ -938,7 +938,7 @@ Partial Class ongoing_details
         txtbarangay.Margin = New Padding(3, 2, 3, 2)
         txtbarangay.Name = "txtbarangay"
         txtbarangay.ReadOnly = True
-        txtbarangay.Size = New Size(139, 23)
+        txtbarangay.Size = New Size(139, 27)
         txtbarangay.TabIndex = 17
         ' 
         ' txtorg
@@ -950,7 +950,7 @@ Partial Class ongoing_details
         txtorg.Margin = New Padding(3, 2, 3, 2)
         txtorg.Name = "txtorg"
         txtorg.ReadOnly = True
-        txtorg.Size = New Size(379, 23)
+        txtorg.Size = New Size(379, 27)
         txtorg.TabIndex = 24
         ' 
         ' txtspe
@@ -963,7 +963,7 @@ Partial Class ongoing_details
         txtspe.Multiline = True
         txtspe.Name = "txtspe"
         txtspe.ReadOnly = True
-        txtspe.Size = New Size(142, 151)
+        txtspe.Size = New Size(142, 164)
         txtspe.TabIndex = 187
         ' 
         ' newcontact
@@ -974,7 +974,7 @@ Partial Class ongoing_details
         newcontact.Margin = New Padding(3, 2, 3, 2)
         newcontact.Name = "newcontact"
         newcontact.ReadOnly = True
-        newcontact.Size = New Size(380, 23)
+        newcontact.Size = New Size(380, 27)
         newcontact.TabIndex = 163
         ' 
         ' txtmunicipality
@@ -986,7 +986,7 @@ Partial Class ongoing_details
         txtmunicipality.Margin = New Padding(3, 2, 3, 2)
         txtmunicipality.Name = "txtmunicipality"
         txtmunicipality.ReadOnly = True
-        txtmunicipality.Size = New Size(139, 23)
+        txtmunicipality.Size = New Size(139, 27)
         txtmunicipality.TabIndex = 18
         ' 
         ' Label17
@@ -997,7 +997,7 @@ Partial Class ongoing_details
         Label17.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label17.Location = New Point(141, 274)
         Label17.Name = "Label17"
-        Label17.Size = New Size(58, 18)
+        Label17.Size = New Size(73, 20)
         Label17.TabIndex = 47
         Label17.Text = "Species :"
         ' 
@@ -1011,7 +1011,7 @@ Partial Class ongoing_details
         txtcommodity.Multiline = True
         txtcommodity.Name = "txtcommodity"
         txtcommodity.ReadOnly = True
-        txtcommodity.Size = New Size(138, 150)
+        txtcommodity.Size = New Size(138, 163)
         txtcommodity.TabIndex = 186
         ' 
         ' Label26
@@ -1021,7 +1021,7 @@ Partial Class ongoing_details
         Label26.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label26.Location = New Point(31, 163)
         Label26.Name = "Label26"
-        Label26.Size = New Size(81, 18)
+        Label26.Size = New Size(103, 20)
         Label26.TabIndex = 164
         Label26.Text = "Type of Org :"
         ' 
@@ -1034,7 +1034,7 @@ Partial Class ongoing_details
         txtyear.Margin = New Padding(3, 2, 3, 2)
         txtyear.Name = "txtyear"
         txtyear.ReadOnly = True
-        txtyear.Size = New Size(170, 23)
+        txtyear.Size = New Size(170, 27)
         txtyear.TabIndex = 14
         ' 
         ' txtseedreq
@@ -1046,7 +1046,7 @@ Partial Class ongoing_details
         txtseedreq.Margin = New Padding(3, 2, 3, 2)
         txtseedreq.Name = "txtseedreq"
         txtseedreq.ReadOnly = True
-        txtseedreq.Size = New Size(193, 23)
+        txtseedreq.Size = New Size(193, 27)
         txtseedreq.TabIndex = 28
         ' 
         ' txtcomponent
@@ -1059,7 +1059,7 @@ Partial Class ongoing_details
         txtcomponent.Multiline = True
         txtcomponent.Name = "txtcomponent"
         txtcomponent.ReadOnly = True
-        txtcomponent.Size = New Size(246, 151)
+        txtcomponent.Size = New Size(246, 164)
         txtcomponent.TabIndex = 185
         ' 
         ' txttypeorg
@@ -1070,7 +1070,7 @@ Partial Class ongoing_details
         txttypeorg.Margin = New Padding(3, 2, 3, 2)
         txttypeorg.Name = "txttypeorg"
         txttypeorg.ReadOnly = True
-        txttypeorg.Size = New Size(157, 23)
+        txttypeorg.Size = New Size(157, 27)
         txttypeorg.TabIndex = 165
         ' 
         ' dateofreport
@@ -1080,7 +1080,7 @@ Partial Class ongoing_details
         dateofreport.Location = New Point(239, 713)
         dateofreport.Margin = New Padding(3, 2, 3, 2)
         dateofreport.Name = "dateofreport"
-        dateofreport.Size = New Size(342, 23)
+        dateofreport.Size = New Size(342, 27)
         dateofreport.TabIndex = 38
         ' 
         ' txtspecies
@@ -1094,7 +1094,7 @@ Partial Class ongoing_details
         txtspecies.Multiline = True
         txtspecies.Name = "txtspecies"
         txtspecies.ReadOnly = True
-        txtspecies.Size = New Size(138, 151)
+        txtspecies.Size = New Size(138, 164)
         txtspecies.TabIndex = 184
         ' 
         ' Label5
@@ -1105,7 +1105,7 @@ Partial Class ongoing_details
         Label5.Font = New Font("Trebuchet MS", 7.8F, FontStyle.Bold, GraphicsUnit.Point)
         Label5.Location = New Point(298, 301)
         Label5.Name = "Label5"
-        Label5.Size = New Size(72, 16)
+        Label5.Size = New Size(84, 18)
         Label5.TabIndex = 21
         Label5.Text = "Municipality"
         ' 
@@ -1117,7 +1117,7 @@ Partial Class ongoing_details
         sedd.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         sedd.Location = New Point(236, 236)
         sedd.Name = "sedd"
-        sedd.Size = New Size(119, 18)
+        sedd.Size = New Size(149, 20)
         sedd.TabIndex = 27
         sedd.Text = "Seedling Required :"
         ' 
@@ -1130,7 +1130,7 @@ Partial Class ongoing_details
         txtseedplanted.Margin = New Padding(3, 2, 3, 2)
         txtseedplanted.Name = "txtseedplanted"
         txtseedplanted.ReadOnly = True
-        txtseedplanted.Size = New Size(140, 23)
+        txtseedplanted.Size = New Size(140, 27)
         txtseedplanted.TabIndex = 182
         ' 
         ' Label29
@@ -1141,7 +1141,7 @@ Partial Class ongoing_details
         Label29.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label29.Location = New Point(298, 362)
         Label29.Name = "Label29"
-        Label29.Size = New Size(80, 18)
+        Label29.Size = New Size(98, 20)
         Label29.TabIndex = 169
         Label29.Text = "Commodity :"
         ' 
@@ -1152,7 +1152,7 @@ Partial Class ongoing_details
         datecontractexe.Location = New Point(238, 573)
         datecontractexe.Margin = New Padding(3, 2, 3, 2)
         datecontractexe.Name = "datecontractexe"
-        datecontractexe.Size = New Size(342, 23)
+        datecontractexe.Size = New Size(342, 27)
         datecontractexe.TabIndex = 32
         ' 
         ' Label7
@@ -1162,7 +1162,7 @@ Partial Class ongoing_details
         Label7.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label7.Location = New Point(29, 96)
         Label7.Name = "Label7"
-        Label7.Size = New Size(138, 18)
+        Label7.Size = New Size(175, 20)
         Label7.TabIndex = 23
         Label7.Text = "Name of Implementer :"
         ' 
@@ -1174,7 +1174,7 @@ Partial Class ongoing_details
         Label19.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label19.Location = New Point(628, 273)
         Label19.Name = "Label19"
-        Label19.Size = New Size(111, 18)
+        Label19.Size = New Size(139, 20)
         Label19.TabIndex = 181
         Label19.Text = "Seedling Planted :"
         ' 
@@ -1186,7 +1186,7 @@ Partial Class ongoing_details
         Label30.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label30.Location = New Point(443, 362)
         Label30.Name = "Label30"
-        Label30.Size = New Size(58, 18)
+        Label30.Size = New Size(73, 20)
         Label30.TabIndex = 172
         Label30.Text = "Species :"
         ' 
@@ -1198,7 +1198,7 @@ Partial Class ongoing_details
         Label4.Font = New Font("Trebuchet MS", 7.8F, FontStyle.Bold, GraphicsUnit.Point)
         Label4.Location = New Point(149, 301)
         Label4.Name = "Label4"
-        Label4.Size = New Size(57, 16)
+        Label4.Size = New Size(65, 18)
         Label4.TabIndex = 20
         Label4.Text = "Barangay"
         ' 
@@ -1211,7 +1211,7 @@ Partial Class ongoing_details
         txtarea.Margin = New Padding(3, 2, 3, 2)
         txtarea.Name = "txtarea"
         txtarea.ReadOnly = True
-        txtarea.Size = New Size(139, 23)
+        txtarea.Size = New Size(139, 27)
         txtarea.TabIndex = 26
         ' 
         ' Label28
@@ -1222,7 +1222,7 @@ Partial Class ongoing_details
         Label28.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label28.Location = New Point(44, 363)
         Label28.Name = "Label28"
-        Label28.Size = New Size(80, 18)
+        Label28.Size = New Size(100, 20)
         Label28.TabIndex = 167
         Label28.Text = "Component :"
         ' 
@@ -1234,7 +1234,7 @@ Partial Class ongoing_details
         Label31.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label31.Location = New Point(31, 197)
         Label31.Name = "Label31"
-        Label31.Size = New Size(78, 18)
+        Label31.Size = New Size(99, 20)
         Label31.TabIndex = 173
         Label31.Text = "Org Tenure :"
         ' 
@@ -1246,7 +1246,7 @@ Partial Class ongoing_details
         Label11.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label11.Location = New Point(35, 610)
         Label11.Name = "Label11"
-        Label11.Size = New Size(150, 18)
+        Label11.Size = New Size(186, 20)
         Label11.TabIndex = 33
         Label11.Text = "Date of Expiry Contract :"
         ' 
@@ -1258,7 +1258,7 @@ Partial Class ongoing_details
         Label13.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label13.Location = New Point(35, 679)
         Label13.Name = "Label13"
-        Label13.Size = New Size(234, 18)
+        Label13.Size = New Size(292, 20)
         Label13.TabIndex = 37
         Label13.Text = "Date of Performance Validation Report :"
         ' 
@@ -1271,7 +1271,7 @@ Partial Class ongoing_details
         txtseedpro.Margin = New Padding(3, 2, 3, 2)
         txtseedpro.Name = "txtseedpro"
         txtseedpro.ReadOnly = True
-        txtseedpro.Size = New Size(140, 23)
+        txtseedpro.Size = New Size(140, 27)
         txtseedpro.TabIndex = 180
         ' 
         ' txttenure
@@ -1283,7 +1283,7 @@ Partial Class ongoing_details
         txttenure.Margin = New Padding(3, 2, 3, 2)
         txttenure.Name = "txttenure"
         txttenure.ReadOnly = True
-        txttenure.Size = New Size(158, 23)
+        txttenure.Size = New Size(158, 27)
         txttenure.TabIndex = 174
         ' 
         ' datecontractexp
@@ -1293,7 +1293,7 @@ Partial Class ongoing_details
         datecontractexp.Location = New Point(237, 607)
         datecontractexp.Margin = New Padding(3, 2, 3, 2)
         datecontractexp.Name = "datecontractexp"
-        datecontractexp.Size = New Size(342, 23)
+        datecontractexp.Size = New Size(342, 27)
         datecontractexp.TabIndex = 34
         ' 
         ' Label8
@@ -1304,7 +1304,7 @@ Partial Class ongoing_details
         Label8.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label8.Location = New Point(29, 236)
         Label8.Name = "Label8"
-        Label8.Size = New Size(42, 18)
+        Label8.Size = New Size(53, 20)
         Label8.TabIndex = 25
         Label8.Text = "Area :"
         ' 
@@ -1316,7 +1316,7 @@ Partial Class ongoing_details
         Label18.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label18.Location = New Point(628, 233)
         Label18.Name = "Label18"
-        Label18.Size = New Size(114, 18)
+        Label18.Size = New Size(143, 20)
         Label18.TabIndex = 179
         Label18.Text = "Seedling Produce :"
         ' 
@@ -1328,7 +1328,7 @@ Partial Class ongoing_details
         Label14.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label14.Location = New Point(1072, 42)
         Label14.Name = "Label14"
-        Label14.Size = New Size(99, 18)
+        Label14.Size = New Size(126, 20)
         Label14.TabIndex = 39
         Label14.Text = "Survival Rating :"
         ' 
@@ -1339,7 +1339,7 @@ Partial Class ongoing_details
         txtreport.Margin = New Padding(3, 2, 3, 2)
         txtreport.Name = "txtreport"
         txtreport.ReadOnly = True
-        txtreport.Size = New Size(341, 23)
+        txtreport.Size = New Size(341, 27)
         txtreport.TabIndex = 178
         txtreport.Text = "For Updating"
         txtreport.Visible = False
@@ -1352,7 +1352,7 @@ Partial Class ongoing_details
         Label12.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label12.Location = New Point(35, 646)
         Label12.Name = "Label12"
-        Label12.Size = New Size(155, 18)
+        Label12.Size = New Size(198, 20)
         Label12.TabIndex = 35
         Label12.Text = "Date of Actual Turn Over :"
         ' 
@@ -1363,7 +1363,7 @@ Partial Class ongoing_details
         dateofactual.Location = New Point(239, 642)
         dateofactual.Margin = New Padding(3, 2, 3, 2)
         dateofactual.Name = "dateofactual"
-        dateofactual.Size = New Size(342, 23)
+        dateofactual.Size = New Size(342, 27)
         dateofactual.TabIndex = 36
         ' 
         ' txtactual
@@ -1373,7 +1373,7 @@ Partial Class ongoing_details
         txtactual.Margin = New Padding(3, 2, 3, 2)
         txtactual.Name = "txtactual"
         txtactual.ReadOnly = True
-        txtactual.Size = New Size(341, 23)
+        txtactual.Size = New Size(341, 27)
         txtactual.TabIndex = 177
         txtactual.Text = "For Updating"
         txtactual.Visible = False
@@ -1386,7 +1386,7 @@ Partial Class ongoing_details
         Label10.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
         Label10.Location = New Point(35, 577)
         Label10.Name = "Label10"
-        Label10.Size = New Size(170, 18)
+        Label10.Size = New Size(212, 20)
         Label10.TabIndex = 31
         Label10.Text = "Date of Contract Execution :"
         ' 
@@ -1410,7 +1410,7 @@ Partial Class ongoing_details
         Label16.ForeColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
         Label16.Location = New Point(8, 22)
         Label16.Name = "Label16"
-        Label16.Size = New Size(247, 32)
+        Label16.Size = New Size(312, 40)
         Label16.TabIndex = 129
         Label16.Text = "PROJECTS DETAILS"
         ' 
@@ -1419,7 +1419,7 @@ Partial Class ongoing_details
         code.Location = New Point(383, 30)
         code.Margin = New Padding(3, 2, 3, 2)
         code.Name = "code"
-        code.Size = New Size(236, 23)
+        code.Size = New Size(236, 27)
         code.TabIndex = 130
         code.Visible = False
         ' 
@@ -1427,7 +1427,7 @@ Partial Class ongoing_details
         ' 
         txtsr.Location = New Point(326, 30)
         txtsr.Name = "txtsr"
-        txtsr.Size = New Size(51, 23)
+        txtsr.Size = New Size(51, 27)
         txtsr.TabIndex = 174
         txtsr.Visible = False
         ' 
@@ -1449,18 +1449,18 @@ Partial Class ongoing_details
         ' 
         ' btnPrevRecord
         ' 
-        btnPrevRecord.Location = New Point(12, 52)
+        btnPrevRecord.Location = New Point(12, 65)
         btnPrevRecord.Name = "btnPrevRecord"
-        btnPrevRecord.Size = New Size(75, 23)
+        btnPrevRecord.Size = New Size(75, 31)
         btnPrevRecord.TabIndex = 267
         btnPrevRecord.Text = "<< Prev"
         btnPrevRecord.UseVisualStyleBackColor = True
         ' 
         ' btnNextRecord
         ' 
-        btnNextRecord.Location = New Point(93, 52)
+        btnNextRecord.Location = New Point(93, 65)
         btnNextRecord.Name = "btnNextRecord"
-        btnNextRecord.Size = New Size(75, 23)
+        btnNextRecord.Size = New Size(75, 31)
         btnNextRecord.TabIndex = 268
         btnNextRecord.Text = "Next >>"
         btnNextRecord.UseVisualStyleBackColor = True
@@ -1489,10 +1489,10 @@ Partial Class ongoing_details
         ' 
         ' ongoing_details
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.White
-        ClientSize = New Size(1361, 900)
+        ClientSize = New Size(1361, 951)
         Controls.Add(btnPrintDoc)
         Controls.Add(btnNextRecord)
         Controls.Add(btnPrevRecord)

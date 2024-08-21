@@ -1,10 +1,12 @@
 ﻿
 Imports System.Drawing.Printing
 Imports System.IO
+
 'Imports iTextSharp.text
 'Imports iTextSharp.text.pdf
 Imports Microsoft.Reporting.WinForms
 Imports MySql.Data.MySqlClient
+Imports PdfiumViewer
 
 Public Class ongoing_details
     Public polygonCode As String
@@ -1351,9 +1353,8 @@ Public Class ongoing_details
             MessageBox.Show("Can't find the document for this contract.")
             Return
         End If
-        'Dim fs = New FileStream(contractDocFileName, FileMode.Create, FileAccess.Write, FileShare.None)
-        'Dim doc = New Document()
-        'Dim writer = PdfWriter.GetInstance(doc, fs)
-        'doc.Open()
+
+        ViewPdf.fileName = contractDocFileName
+        ViewPdf.ShowDialog()
     End Sub
 End Class
