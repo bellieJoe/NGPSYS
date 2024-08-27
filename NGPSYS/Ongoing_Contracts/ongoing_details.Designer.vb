@@ -25,6 +25,7 @@ Partial Class ongoing_details
         components = New ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ongoing_details))
         Panel1 = New Panel()
+        Button2 = New Button()
         btnUploadDoc = New Button()
         Label40 = New Label()
         txtpolycode = New TextBox()
@@ -143,6 +144,7 @@ Partial Class ongoing_details
         btnNextRecord = New Button()
         btnPrintDoc = New Button()
         PrintPreviewDialog1 = New PrintPreviewDialog()
+        Button3 = New Button()
         Panel1.SuspendLayout()
         CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
         GroupBox2.SuspendLayout()
@@ -153,6 +155,7 @@ Partial Class ongoing_details
         ' Panel1
         ' 
         Panel1.BackColor = Color.DarkSeaGreen
+        Panel1.Controls.Add(Button2)
         Panel1.Controls.Add(btnUploadDoc)
         Panel1.Controls.Add(Label40)
         Panel1.Controls.Add(txtpolycode)
@@ -234,6 +237,18 @@ Partial Class ongoing_details
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(1337, 822)
         Panel1.TabIndex = 123
+        ' 
+        ' Button2
+        ' 
+        Button2.BackColor = Color.WhiteSmoke
+        Button2.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Button2.ForeColor = Color.Black
+        Button2.Location = New Point(1164, 595)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(144, 50)
+        Button2.TabIndex = 237
+        Button2.Text = "Change/Upload Area Map"
+        Button2.UseVisualStyleBackColor = False
         ' 
         ' btnUploadDoc
         ' 
@@ -1487,12 +1502,25 @@ Partial Class ongoing_details
         PrintPreviewDialog1.Name = "PrintPreviewDialog1"
         PrintPreviewDialog1.Visible = False
         ' 
+        ' Button3
+        ' 
+        Button3.BackColor = Color.FromArgb(CByte(0), CByte(120), CByte(212))
+        Button3.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Button3.ForeColor = Color.White
+        Button3.Location = New Point(992, 13)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(115, 58)
+        Button3.TabIndex = 270
+        Button3.Text = "Print Area Map"
+        Button3.UseVisualStyleBackColor = False
+        ' 
         ' ongoing_details
         ' 
         AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.White
         ClientSize = New Size(1361, 951)
+        Controls.Add(Button3)
         Controls.Add(btnPrintDoc)
         Controls.Add(btnNextRecord)
         Controls.Add(btnPrevRecord)
@@ -1639,4 +1667,6 @@ Partial Class ongoing_details
     Friend WithEvents btnUploadDoc As Button
     Friend WithEvents btnPrintDoc As Button
     Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
 End Class

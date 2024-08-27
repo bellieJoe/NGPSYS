@@ -1342,12 +1342,13 @@ Public Class ongoing_details
     End Sub
 
     Private Sub btnUploadDoc_Click(sender As Object, e As EventArgs) Handles btnUploadDoc.Click
-        UploadContractDoc.ShowDialog()
+        UploadDoc.storageFolder = "C:/ngpsys/storage/contracts/"
+        UploadDoc.ShowDialog()
     End Sub
 
     Private Sub btnPrintDoc_Click(sender As Object, e As EventArgs) Handles btnPrintDoc.Click
         Dim contractDocFileName = "C:/ngpsys/storage/contracts/" + uniquecode + ".pdf"
-        Dim fileExists As Boolean = My.Computer.FileSystem.FileExists(contractDocFileName)
+        Dim fileExists = My.Computer.FileSystem.FileExists(contractDocFileName)
 
         If Not fileExists Then
             MessageBox.Show("Can't find the document for this contract.")
@@ -1355,6 +1356,26 @@ Public Class ongoing_details
         End If
 
         ViewPdf.fileName = contractDocFileName
+        ViewPdf.ShowDialog()
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        UploadDoc.Label1.Text = "Upload Area Map"
+        UploadDoc.storageFolder = "C:/ngpsys/storage/area_map/"
+        UploadDoc.ShowDialog()
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim areaMapFileName = "C:/ngpsys/storage/area_map/" + uniquecode + ".pdf"
+        Dim fileExists = My.Computer.FileSystem.FileExists(areaMapFileName)
+
+        If Not fileExists Then
+            MessageBox.Show("Can't find the area map for this contract.")
+            Return
+        End If
+
+        ViewPdf.Text = "View Area Map"
+        ViewPdf.fileName = areaMapFileName
         ViewPdf.ShowDialog()
     End Sub
 End Class
