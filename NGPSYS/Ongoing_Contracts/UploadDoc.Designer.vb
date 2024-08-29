@@ -32,9 +32,10 @@ Partial Class UploadDoc
         ' 
         btnChooseFile.FlatAppearance.BorderColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
         btnChooseFile.FlatStyle = FlatStyle.Flat
-        btnChooseFile.Location = New Point(12, 33)
+        btnChooseFile.Location = New Point(14, 44)
+        btnChooseFile.Margin = New Padding(3, 4, 3, 4)
         btnChooseFile.Name = "btnChooseFile"
-        btnChooseFile.Size = New Size(287, 83)
+        btnChooseFile.Size = New Size(328, 111)
         btnChooseFile.TabIndex = 0
         btnChooseFile.Text = "Choose a PDF File"
         btnChooseFile.UseVisualStyleBackColor = True
@@ -42,17 +43,18 @@ Partial Class UploadDoc
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(14, 11)
+        Label1.Location = New Point(16, 15)
         Label1.Name = "Label1"
-        Label1.Size = New Size(112, 15)
+        Label1.Size = New Size(138, 20)
         Label1.TabIndex = 1
         Label1.Text = "Contract Document"
         ' 
         ' btnUpload
         ' 
-        btnUpload.Location = New Point(224, 136)
+        btnUpload.Location = New Point(256, 181)
+        btnUpload.Margin = New Padding(3, 4, 3, 4)
         btnUpload.Name = "btnUpload"
-        btnUpload.Size = New Size(75, 23)
+        btnUpload.Size = New Size(86, 31)
         btnUpload.TabIndex = 2
         btnUpload.Text = "Upload"
         btnUpload.UseVisualStyleBackColor = True
@@ -62,18 +64,19 @@ Partial Class UploadDoc
         OpenFileDialog1.FileName = "OpenFileDialog1"
         OpenFileDialog1.Filter = "Pdf Files|*.pdf"
         ' 
-        ' UploadContractDoc
+        ' UploadDoc
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(311, 174)
+        ClientSize = New Size(355, 232)
         Controls.Add(btnUpload)
         Controls.Add(Label1)
         Controls.Add(btnChooseFile)
         FormBorderStyle = FormBorderStyle.FixedSingle
+        Margin = New Padding(3, 4, 3, 4)
         MaximizeBox = False
         MinimizeBox = False
-        Name = "UploadContractDoc"
+        Name = "UploadDoc"
         StartPosition = FormStartPosition.CenterParent
         Text = "Upload or Change Document"
         ResumeLayout(False)

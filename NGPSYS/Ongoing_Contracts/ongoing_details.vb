@@ -15,6 +15,7 @@ Public Class ongoing_details
     Dim pc2 As Double
     Dim pc3 As Double
     Public selectedContract As String = ""
+    Dim contractId As Integer
 
     Private Sub ongoing_details_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ongoing_details_Load()
@@ -1361,7 +1362,7 @@ Public Class ongoing_details
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         UploadDoc.Label1.Text = "Upload Area Map"
-        UploadDoc.storageFolder = "C:/ngpsys/storage/area_map/"
+        UploadDoc.storageFolder = "\\192.168.1.5/Users/Public/ngpsys/storage/area_map/"
         UploadDoc.ShowDialog()
     End Sub
 
@@ -1377,5 +1378,20 @@ Public Class ongoing_details
         ViewPdf.Text = "View Area Map"
         ViewPdf.fileName = areaMapFileName
         ViewPdf.ShowDialog()
+    End Sub
+
+    Private Sub tsmContracts_Click(sender As Object, e As EventArgs) Handles tsmContracts.Click
+        formDocExplorer.isContract = True
+        formDocExplorer.FolderLocation = "\\192.168.1.84\Users\Public\ngpsys\storage\contracts\"
+        formDocExplorer.Text = "Contracts"
+        formDocExplorer.ShowDialog()
+    End Sub
+
+    Private Sub tsmAreaMap_Click(sender As Object, e As EventArgs) Handles tsmAreaMap.Click
+
+        formDocExplorer.isContract = False
+        formDocExplorer.FolderLocation = "\\192.168.1.84\Users\Public\ngpsys\storage\area_map\"
+        formDocExplorer.Text = "Area Map"
+        formDocExplorer.ShowDialog()
     End Sub
 End Class

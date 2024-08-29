@@ -85,6 +85,8 @@ Partial Class ongoing_details
         viewprojectcost = New ToolStripMenuItem()
         NoOfSitesToolStripMenuItem = New ToolStripMenuItem()
         addpoly = New ToolStripMenuItem()
+        tsmContracts = New ToolStripMenuItem()
+        tsmAreaMap = New ToolStripMenuItem()
         Label2 = New Label()
         txtuniquecode = New TextBox()
         condistricttxt = New TextBox()
@@ -241,7 +243,7 @@ Partial Class ongoing_details
         ' Button2
         ' 
         Button2.BackColor = Color.WhiteSmoke
-        Button2.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Button2.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Button2.ForeColor = Color.Black
         Button2.Location = New Point(1164, 595)
         Button2.Name = "Button2"
@@ -249,11 +251,12 @@ Partial Class ongoing_details
         Button2.TabIndex = 237
         Button2.Text = "Change/Upload Area Map"
         Button2.UseVisualStyleBackColor = False
+        Button2.Visible = False
         ' 
         ' btnUploadDoc
         ' 
         btnUploadDoc.BackColor = Color.WhiteSmoke
-        btnUploadDoc.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        btnUploadDoc.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
         btnUploadDoc.ForeColor = Color.Black
         btnUploadDoc.Location = New Point(1164, 656)
         btnUploadDoc.Name = "btnUploadDoc"
@@ -261,13 +264,14 @@ Partial Class ongoing_details
         btnUploadDoc.TabIndex = 236
         btnUploadDoc.Text = "Change/Upload Document"
         btnUploadDoc.UseVisualStyleBackColor = False
+        btnUploadDoc.Visible = False
         ' 
         ' Label40
         ' 
         Label40.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         Label40.AutoSize = True
         Label40.BackColor = Color.DarkSeaGreen
-        Label40.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label40.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Label40.Location = New Point(363, 163)
         Label40.Name = "Label40"
         Label40.Size = New Size(113, 20)
@@ -278,7 +282,7 @@ Partial Class ongoing_details
         ' 
         txtpolycode.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         txtpolycode.BackColor = Color.White
-        txtpolycode.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        txtpolycode.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         txtpolycode.Location = New Point(481, 163)
         txtpolycode.Margin = New Padding(3, 2, 3, 2)
         txtpolycode.Name = "txtpolycode"
@@ -291,7 +295,7 @@ Partial Class ongoing_details
         Label39.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         Label39.AutoSize = True
         Label39.BackColor = Color.DarkSeaGreen
-        Label39.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label39.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Label39.Location = New Point(627, 516)
         Label39.Name = "Label39"
         Label39.Size = New Size(115, 20)
@@ -302,7 +306,7 @@ Partial Class ongoing_details
         ' 
         txtgrossamount.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         txtgrossamount.BackColor = Color.White
-        txtgrossamount.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        txtgrossamount.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         txtgrossamount.Location = New Point(745, 513)
         txtgrossamount.Margin = New Padding(3, 2, 3, 2)
         txtgrossamount.Name = "txtgrossamount"
@@ -315,7 +319,7 @@ Partial Class ongoing_details
         Label37.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         Label37.AutoSize = True
         Label37.BackColor = Color.DarkSeaGreen
-        Label37.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label37.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Label37.Location = New Point(375, 196)
         Label37.Name = "Label37"
         Label37.Size = New Size(101, 20)
@@ -326,7 +330,7 @@ Partial Class ongoing_details
         ' 
         txtcountpoly.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         txtcountpoly.BackColor = Color.White
-        txtcountpoly.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        txtcountpoly.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         txtcountpoly.Location = New Point(481, 194)
         txtcountpoly.Margin = New Padding(3, 2, 3, 2)
         txtcountpoly.Multiline = True
@@ -357,7 +361,7 @@ Partial Class ongoing_details
         ' Button1
         ' 
         Button1.BackColor = Color.FromArgb(CByte(0), CByte(120), CByte(212))
-        Button1.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Button1.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Button1.ForeColor = Color.White
         Button1.Location = New Point(1164, 713)
         Button1.Name = "Button1"
@@ -408,7 +412,7 @@ Partial Class ongoing_details
         Label33.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         Label33.AutoSize = True
         Label33.BackColor = Color.DarkSeaGreen
-        Label33.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label33.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Label33.Location = New Point(627, 326)
         Label33.Name = "Label33"
         Label33.Size = New Size(163, 20)
@@ -419,7 +423,7 @@ Partial Class ongoing_details
         ' 
         txtprojectcost.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         txtprojectcost.BackColor = Color.White
-        txtprojectcost.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        txtprojectcost.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         txtprojectcost.Location = New Point(627, 349)
         txtprojectcost.Margin = New Padding(3, 2, 3, 2)
         txtprojectcost.Name = "txtprojectcost"
@@ -444,7 +448,7 @@ Partial Class ongoing_details
         ' 
         txtunder.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         txtunder.BackColor = Color.White
-        txtunder.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        txtunder.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         txtunder.Location = New Point(19, 146)
         txtunder.Margin = New Padding(3, 2, 3, 2)
         txtunder.Name = "txtunder"
@@ -456,7 +460,7 @@ Partial Class ongoing_details
         ' 
         txtcip.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         txtcip.BackColor = Color.White
-        txtcip.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        txtcip.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         txtcip.Location = New Point(19, 64)
         txtcip.Margin = New Padding(3, 2, 3, 2)
         txtcip.Name = "txtcip"
@@ -469,7 +473,7 @@ Partial Class ongoing_details
         Label34.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         Label34.AutoSize = True
         Label34.BackColor = Color.DarkSeaGreen
-        Label34.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label34.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Label34.Location = New Point(19, 112)
         Label34.Name = "Label34"
         Label34.Size = New Size(217, 20)
@@ -481,7 +485,7 @@ Partial Class ongoing_details
         Label35.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         Label35.AutoSize = True
         Label35.BackColor = Color.DarkSeaGreen
-        Label35.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label35.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Label35.Location = New Point(19, 28)
         Label35.Name = "Label35"
         Label35.Size = New Size(149, 20)
@@ -508,7 +512,7 @@ Partial Class ongoing_details
         Label23.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         Label23.AutoSize = True
         Label23.BackColor = Color.DarkSeaGreen
-        Label23.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label23.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Label23.Location = New Point(14, 127)
         Label23.Name = "Label23"
         Label23.Size = New Size(130, 20)
@@ -518,7 +522,7 @@ Partial Class ongoing_details
         ' dateupdated
         ' 
         dateupdated.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
-        dateupdated.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        dateupdated.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         dateupdated.Location = New Point(154, 34)
         dateupdated.Margin = New Padding(3, 2, 3, 2)
         dateupdated.Name = "dateupdated"
@@ -530,7 +534,7 @@ Partial Class ongoing_details
         Label21.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         Label21.AutoSize = True
         Label21.BackColor = Color.DarkSeaGreen
-        Label21.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label21.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Label21.Location = New Point(14, 34)
         Label21.Name = "Label21"
         Label21.Size = New Size(118, 20)
@@ -541,7 +545,7 @@ Partial Class ongoing_details
         ' 
         TxtAe.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         TxtAe.BackColor = Color.White
-        TxtAe.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        TxtAe.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         TxtAe.Location = New Point(154, 124)
         TxtAe.Margin = New Padding(3, 2, 3, 2)
         TxtAe.Name = "TxtAe"
@@ -553,7 +557,7 @@ Partial Class ongoing_details
         ' 
         txtstatus.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         txtstatus.BackColor = Color.White
-        txtstatus.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        txtstatus.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         txtstatus.Location = New Point(154, 80)
         txtstatus.Margin = New Padding(3, 2, 3, 2)
         txtstatus.Name = "txtstatus"
@@ -566,7 +570,7 @@ Partial Class ongoing_details
         Label22.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         Label22.AutoSize = True
         Label22.BackColor = Color.DarkSeaGreen
-        Label22.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label22.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Label22.Location = New Point(14, 83)
         Label22.Name = "Label22"
         Label22.Size = New Size(63, 20)
@@ -578,7 +582,7 @@ Partial Class ongoing_details
         Label20.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         Label20.AutoSize = True
         Label20.BackColor = Color.DarkSeaGreen
-        Label20.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label20.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Label20.Location = New Point(625, 474)
         Label20.Name = "Label20"
         Label20.Size = New Size(99, 20)
@@ -589,7 +593,7 @@ Partial Class ongoing_details
         ' 
         txtyear3.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         txtyear3.BackColor = Color.White
-        txtyear3.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        txtyear3.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         txtyear3.Location = New Point(745, 471)
         txtyear3.Margin = New Padding(3, 2, 3, 2)
         txtyear3.Name = "txtyear3"
@@ -602,7 +606,7 @@ Partial Class ongoing_details
         Label15.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         Label15.AutoSize = True
         Label15.BackColor = Color.DarkSeaGreen
-        Label15.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label15.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Label15.Location = New Point(625, 431)
         Label15.Name = "Label15"
         Label15.Size = New Size(99, 20)
@@ -613,7 +617,7 @@ Partial Class ongoing_details
         ' 
         txtyear2.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         txtyear2.BackColor = Color.White
-        txtyear2.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        txtyear2.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         txtyear2.Location = New Point(745, 428)
         txtyear2.Margin = New Padding(3, 2, 3, 2)
         txtyear2.Name = "txtyear2"
@@ -626,7 +630,7 @@ Partial Class ongoing_details
         Label9.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         Label9.AutoSize = True
         Label9.BackColor = Color.DarkSeaGreen
-        Label9.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label9.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Label9.Location = New Point(625, 388)
         Label9.Name = "Label9"
         Label9.Size = New Size(99, 20)
@@ -637,7 +641,7 @@ Partial Class ongoing_details
         ' 
         txtyear1.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         txtyear1.BackColor = Color.White
-        txtyear1.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        txtyear1.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         txtyear1.Location = New Point(745, 385)
         txtyear1.Margin = New Padding(3, 2, 3, 2)
         txtyear1.Name = "txtyear1"
@@ -649,7 +653,7 @@ Partial Class ongoing_details
         ' 
         Label1.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         Label1.AutoSize = True
-        Label1.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label1.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Label1.Location = New Point(29, 63)
         Label1.Name = "Label1"
         Label1.Size = New Size(167, 20)
@@ -669,9 +673,9 @@ Partial Class ongoing_details
         ' MenuStrip1
         ' 
         MenuStrip1.BackColor = Color.SeaGreen
-        MenuStrip1.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        MenuStrip1.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
         MenuStrip1.ImageScalingSize = New Size(20, 20)
-        MenuStrip1.Items.AddRange(New ToolStripItem() {ComprehensiveToolStripMenuItem, NdYearMaintenanceAndProtectionToolStripMenuItem, RdYearMaintenanceAndProtectionToolStripMenuItem, MaintenanceToolStripMenuItem, MaintenanceToolStripMenuItem1})
+        MenuStrip1.Items.AddRange(New ToolStripItem() {ComprehensiveToolStripMenuItem, NdYearMaintenanceAndProtectionToolStripMenuItem, RdYearMaintenanceAndProtectionToolStripMenuItem, MaintenanceToolStripMenuItem, MaintenanceToolStripMenuItem1, tsmContracts, tsmAreaMap})
         MenuStrip1.Location = New Point(0, 0)
         MenuStrip1.Name = "MenuStrip1"
         MenuStrip1.RenderMode = ToolStripRenderMode.Professional
@@ -829,12 +833,26 @@ Partial Class ongoing_details
         addpoly.Size = New Size(121, 26)
         addpoly.Text = "Add"
         ' 
+        ' tsmContracts
+        ' 
+        tsmContracts.ForeColor = Color.White
+        tsmContracts.Name = "tsmContracts"
+        tsmContracts.Size = New Size(90, 24)
+        tsmContracts.Text = "Contracts"
+        ' 
+        ' tsmAreaMap
+        ' 
+        tsmAreaMap.ForeColor = Color.White
+        tsmAreaMap.Name = "tsmAreaMap"
+        tsmAreaMap.Size = New Size(91, 24)
+        tsmAreaMap.Text = "Area Map"
+        ' 
         ' Label2
         ' 
         Label2.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         Label2.AutoSize = True
         Label2.BackColor = Color.DarkSeaGreen
-        Label2.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label2.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Label2.Location = New Point(629, 60)
         Label2.Name = "Label2"
         Label2.Size = New Size(51, 20)
@@ -845,7 +863,7 @@ Partial Class ongoing_details
         ' 
         txtuniquecode.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         txtuniquecode.BackColor = Color.White
-        txtuniquecode.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        txtuniquecode.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         txtuniquecode.Location = New Point(199, 60)
         txtuniquecode.Margin = New Padding(3, 2, 3, 2)
         txtuniquecode.Name = "txtuniquecode"
@@ -856,7 +874,7 @@ Partial Class ongoing_details
         ' condistricttxt
         ' 
         condistricttxt.BackColor = SystemColors.Window
-        condistricttxt.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        condistricttxt.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         condistricttxt.Location = New Point(747, 125)
         condistricttxt.Margin = New Padding(3, 2, 3, 2)
         condistricttxt.Name = "condistricttxt"
@@ -869,7 +887,7 @@ Partial Class ongoing_details
         Label3.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         Label3.AutoSize = True
         Label3.BackColor = Color.DarkSeaGreen
-        Label3.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label3.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Label3.Location = New Point(29, 272)
         Label3.Name = "Label3"
         Label3.Size = New Size(79, 20)
@@ -880,7 +898,7 @@ Partial Class ongoing_details
         ' 
         Label25.AutoSize = True
         Label25.BackColor = Color.DarkSeaGreen
-        Label25.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label25.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Label25.Location = New Point(629, 128)
         Label25.Name = "Label25"
         Label25.Size = New Size(70, 20)
@@ -891,7 +909,7 @@ Partial Class ongoing_details
         ' 
         Label24.AutoSize = True
         Label24.BackColor = Color.DarkSeaGreen
-        Label24.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label24.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Label24.Location = New Point(629, 94)
         Label24.Name = "Label24"
         Label24.Size = New Size(72, 20)
@@ -914,7 +932,7 @@ Partial Class ongoing_details
         ' 
         txtprovince.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         txtprovince.BackColor = Color.White
-        txtprovince.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        txtprovince.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         txtprovince.Location = New Point(437, 271)
         txtprovince.Margin = New Padding(3, 2, 3, 2)
         txtprovince.Name = "txtprovince"
@@ -925,7 +943,7 @@ Partial Class ongoing_details
         ' txtconregion
         ' 
         txtconregion.BackColor = SystemColors.Window
-        txtconregion.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        txtconregion.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         txtconregion.Location = New Point(747, 91)
         txtconregion.Margin = New Padding(3, 2, 3, 2)
         txtconregion.Name = "txtconregion"
@@ -937,7 +955,7 @@ Partial Class ongoing_details
         ' 
         Label27.AutoSize = True
         Label27.BackColor = Color.DarkSeaGreen
-        Label27.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label27.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Label27.Location = New Point(31, 129)
         Label27.Name = "Label27"
         Label27.Size = New Size(125, 20)
@@ -948,7 +966,7 @@ Partial Class ongoing_details
         ' 
         txtbarangay.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         txtbarangay.BackColor = Color.White
-        txtbarangay.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        txtbarangay.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         txtbarangay.Location = New Point(115, 271)
         txtbarangay.Margin = New Padding(3, 2, 3, 2)
         txtbarangay.Name = "txtbarangay"
@@ -960,7 +978,7 @@ Partial Class ongoing_details
         ' 
         txtorg.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         txtorg.BackColor = Color.White
-        txtorg.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        txtorg.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         txtorg.Location = New Point(200, 93)
         txtorg.Margin = New Padding(3, 2, 3, 2)
         txtorg.Name = "txtorg"
@@ -972,7 +990,7 @@ Partial Class ongoing_details
         ' 
         txtspe.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         txtspe.BackColor = Color.White
-        txtspe.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        txtspe.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         txtspe.Location = New Point(443, 383)
         txtspe.Margin = New Padding(3, 2, 3, 2)
         txtspe.Multiline = True
@@ -984,7 +1002,7 @@ Partial Class ongoing_details
         ' newcontact
         ' 
         newcontact.BackColor = Color.White
-        newcontact.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        newcontact.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         newcontact.Location = New Point(199, 126)
         newcontact.Margin = New Padding(3, 2, 3, 2)
         newcontact.Name = "newcontact"
@@ -996,7 +1014,7 @@ Partial Class ongoing_details
         ' 
         txtmunicipality.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         txtmunicipality.BackColor = Color.White
-        txtmunicipality.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        txtmunicipality.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         txtmunicipality.Location = New Point(275, 271)
         txtmunicipality.Margin = New Padding(3, 2, 3, 2)
         txtmunicipality.Name = "txtmunicipality"
@@ -1009,7 +1027,7 @@ Partial Class ongoing_details
         Label17.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         Label17.AutoSize = True
         Label17.BackColor = SystemColors.GradientActiveCaption
-        Label17.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label17.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Label17.Location = New Point(141, 274)
         Label17.Name = "Label17"
         Label17.Size = New Size(73, 20)
@@ -1020,7 +1038,7 @@ Partial Class ongoing_details
         ' 
         txtcommodity.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         txtcommodity.BackColor = Color.White
-        txtcommodity.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        txtcommodity.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         txtcommodity.Location = New Point(296, 384)
         txtcommodity.Margin = New Padding(3, 2, 3, 2)
         txtcommodity.Multiline = True
@@ -1033,7 +1051,7 @@ Partial Class ongoing_details
         ' 
         Label26.AutoSize = True
         Label26.BackColor = Color.DarkSeaGreen
-        Label26.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label26.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Label26.Location = New Point(31, 163)
         Label26.Name = "Label26"
         Label26.Size = New Size(103, 20)
@@ -1044,7 +1062,7 @@ Partial Class ongoing_details
         ' 
         txtyear.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         txtyear.BackColor = Color.White
-        txtyear.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        txtyear.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         txtyear.Location = New Point(747, 57)
         txtyear.Margin = New Padding(3, 2, 3, 2)
         txtyear.Name = "txtyear"
@@ -1056,7 +1074,7 @@ Partial Class ongoing_details
         ' 
         txtseedreq.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         txtseedreq.BackColor = Color.White
-        txtseedreq.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        txtseedreq.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         txtseedreq.Location = New Point(386, 232)
         txtseedreq.Margin = New Padding(3, 2, 3, 2)
         txtseedreq.Name = "txtseedreq"
@@ -1068,7 +1086,7 @@ Partial Class ongoing_details
         ' 
         txtcomponent.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         txtcomponent.BackColor = Color.White
-        txtcomponent.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        txtcomponent.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         txtcomponent.Location = New Point(43, 383)
         txtcomponent.Margin = New Padding(3, 2, 3, 2)
         txtcomponent.Multiline = True
@@ -1080,7 +1098,7 @@ Partial Class ongoing_details
         ' txttypeorg
         ' 
         txttypeorg.BackColor = Color.White
-        txttypeorg.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        txttypeorg.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         txttypeorg.Location = New Point(200, 160)
         txttypeorg.Margin = New Padding(3, 2, 3, 2)
         txttypeorg.Name = "txttypeorg"
@@ -1091,7 +1109,7 @@ Partial Class ongoing_details
         ' dateofreport
         ' 
         dateofreport.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
-        dateofreport.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        dateofreport.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         dateofreport.Location = New Point(239, 713)
         dateofreport.Margin = New Padding(3, 2, 3, 2)
         dateofreport.Name = "dateofreport"
@@ -1103,7 +1121,7 @@ Partial Class ongoing_details
         txtspecies.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         txtspecies.BackColor = Color.White
         txtspecies.Enabled = False
-        txtspecies.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        txtspecies.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         txtspecies.Location = New Point(45, 383)
         txtspecies.Margin = New Padding(3, 2, 3, 2)
         txtspecies.Multiline = True
@@ -1129,7 +1147,7 @@ Partial Class ongoing_details
         sedd.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         sedd.AutoSize = True
         sedd.BackColor = Color.DarkSeaGreen
-        sedd.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        sedd.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
         sedd.Location = New Point(236, 236)
         sedd.Name = "sedd"
         sedd.Size = New Size(149, 20)
@@ -1140,7 +1158,7 @@ Partial Class ongoing_details
         ' 
         txtseedplanted.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         txtseedplanted.BackColor = Color.White
-        txtseedplanted.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        txtseedplanted.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         txtseedplanted.Location = New Point(775, 269)
         txtseedplanted.Margin = New Padding(3, 2, 3, 2)
         txtseedplanted.Name = "txtseedplanted"
@@ -1153,7 +1171,7 @@ Partial Class ongoing_details
         Label29.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         Label29.AutoSize = True
         Label29.BackColor = Color.DarkSeaGreen
-        Label29.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label29.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Label29.Location = New Point(298, 362)
         Label29.Name = "Label29"
         Label29.Size = New Size(98, 20)
@@ -1163,7 +1181,7 @@ Partial Class ongoing_details
         ' datecontractexe
         ' 
         datecontractexe.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
-        datecontractexe.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        datecontractexe.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         datecontractexe.Location = New Point(238, 573)
         datecontractexe.Margin = New Padding(3, 2, 3, 2)
         datecontractexe.Name = "datecontractexe"
@@ -1174,7 +1192,7 @@ Partial Class ongoing_details
         ' 
         Label7.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         Label7.AutoSize = True
-        Label7.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label7.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Label7.Location = New Point(29, 96)
         Label7.Name = "Label7"
         Label7.Size = New Size(175, 20)
@@ -1186,7 +1204,7 @@ Partial Class ongoing_details
         Label19.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         Label19.AutoSize = True
         Label19.BackColor = Color.DarkSeaGreen
-        Label19.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label19.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Label19.Location = New Point(628, 273)
         Label19.Name = "Label19"
         Label19.Size = New Size(139, 20)
@@ -1198,7 +1216,7 @@ Partial Class ongoing_details
         Label30.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         Label30.AutoSize = True
         Label30.BackColor = Color.DarkSeaGreen
-        Label30.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label30.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Label30.Location = New Point(443, 362)
         Label30.Name = "Label30"
         Label30.Size = New Size(73, 20)
@@ -1221,7 +1239,7 @@ Partial Class ongoing_details
         ' 
         txtarea.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         txtarea.BackColor = Color.White
-        txtarea.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        txtarea.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         txtarea.Location = New Point(88, 232)
         txtarea.Margin = New Padding(3, 2, 3, 2)
         txtarea.Name = "txtarea"
@@ -1234,7 +1252,7 @@ Partial Class ongoing_details
         Label28.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         Label28.AutoSize = True
         Label28.BackColor = Color.DarkSeaGreen
-        Label28.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label28.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Label28.Location = New Point(44, 363)
         Label28.Name = "Label28"
         Label28.Size = New Size(100, 20)
@@ -1246,7 +1264,7 @@ Partial Class ongoing_details
         Label31.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         Label31.AutoSize = True
         Label31.BackColor = Color.DarkSeaGreen
-        Label31.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label31.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Label31.Location = New Point(31, 197)
         Label31.Name = "Label31"
         Label31.Size = New Size(99, 20)
@@ -1258,7 +1276,7 @@ Partial Class ongoing_details
         Label11.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         Label11.AutoSize = True
         Label11.BackColor = Color.DarkSeaGreen
-        Label11.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label11.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Label11.Location = New Point(35, 610)
         Label11.Name = "Label11"
         Label11.Size = New Size(186, 20)
@@ -1270,7 +1288,7 @@ Partial Class ongoing_details
         Label13.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         Label13.AutoSize = True
         Label13.BackColor = Color.DarkSeaGreen
-        Label13.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label13.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Label13.Location = New Point(35, 679)
         Label13.Name = "Label13"
         Label13.Size = New Size(292, 20)
@@ -1281,7 +1299,7 @@ Partial Class ongoing_details
         ' 
         txtseedpro.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         txtseedpro.BackColor = Color.White
-        txtseedpro.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        txtseedpro.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         txtseedpro.Location = New Point(775, 229)
         txtseedpro.Margin = New Padding(3, 2, 3, 2)
         txtseedpro.Name = "txtseedpro"
@@ -1293,7 +1311,7 @@ Partial Class ongoing_details
         ' 
         txttenure.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         txttenure.BackColor = Color.White
-        txttenure.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        txttenure.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         txttenure.Location = New Point(199, 193)
         txttenure.Margin = New Padding(3, 2, 3, 2)
         txttenure.Name = "txttenure"
@@ -1304,7 +1322,7 @@ Partial Class ongoing_details
         ' datecontractexp
         ' 
         datecontractexp.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
-        datecontractexp.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        datecontractexp.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         datecontractexp.Location = New Point(237, 607)
         datecontractexp.Margin = New Padding(3, 2, 3, 2)
         datecontractexp.Name = "datecontractexp"
@@ -1316,7 +1334,7 @@ Partial Class ongoing_details
         Label8.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         Label8.AutoSize = True
         Label8.BackColor = Color.DarkSeaGreen
-        Label8.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label8.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Label8.Location = New Point(29, 236)
         Label8.Name = "Label8"
         Label8.Size = New Size(53, 20)
@@ -1328,7 +1346,7 @@ Partial Class ongoing_details
         Label18.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         Label18.AutoSize = True
         Label18.BackColor = Color.DarkSeaGreen
-        Label18.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label18.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Label18.Location = New Point(628, 233)
         Label18.Name = "Label18"
         Label18.Size = New Size(143, 20)
@@ -1340,7 +1358,7 @@ Partial Class ongoing_details
         Label14.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         Label14.AutoSize = True
         Label14.BackColor = Color.DarkSeaGreen
-        Label14.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label14.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Label14.Location = New Point(1072, 42)
         Label14.Name = "Label14"
         Label14.Size = New Size(126, 20)
@@ -1349,7 +1367,7 @@ Partial Class ongoing_details
         ' 
         ' txtreport
         ' 
-        txtreport.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        txtreport.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         txtreport.Location = New Point(239, 713)
         txtreport.Margin = New Padding(3, 2, 3, 2)
         txtreport.Name = "txtreport"
@@ -1364,7 +1382,7 @@ Partial Class ongoing_details
         Label12.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         Label12.AutoSize = True
         Label12.BackColor = Color.DarkSeaGreen
-        Label12.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label12.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Label12.Location = New Point(35, 646)
         Label12.Name = "Label12"
         Label12.Size = New Size(198, 20)
@@ -1374,7 +1392,7 @@ Partial Class ongoing_details
         ' dateofactual
         ' 
         dateofactual.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
-        dateofactual.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        dateofactual.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         dateofactual.Location = New Point(239, 642)
         dateofactual.Margin = New Padding(3, 2, 3, 2)
         dateofactual.Name = "dateofactual"
@@ -1383,7 +1401,7 @@ Partial Class ongoing_details
         ' 
         ' txtactual
         ' 
-        txtactual.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        txtactual.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         txtactual.Location = New Point(239, 642)
         txtactual.Margin = New Padding(3, 2, 3, 2)
         txtactual.Name = "txtactual"
@@ -1398,7 +1416,7 @@ Partial Class ongoing_details
         Label10.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left
         Label10.AutoSize = True
         Label10.BackColor = Color.DarkSeaGreen
-        Label10.Font = New Font("Trebuchet MS", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Label10.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Label10.Location = New Point(35, 577)
         Label10.Name = "Label10"
         Label10.Size = New Size(212, 20)
@@ -1408,7 +1426,7 @@ Partial Class ongoing_details
         ' btnnext
         ' 
         btnnext.BackColor = Color.FromArgb(CByte(0), CByte(120), CByte(212))
-        btnnext.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        btnnext.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point)
         btnnext.ForeColor = Color.White
         btnnext.Location = New Point(887, 612)
         btnnext.Margin = New Padding(3, 2, 3, 2)
@@ -1453,7 +1471,7 @@ Partial Class ongoing_details
         ' btnprintreport
         ' 
         btnprintreport.BackColor = Color.FromArgb(CByte(0), CByte(120), CByte(212))
-        btnprintreport.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        btnprintreport.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
         btnprintreport.ForeColor = Color.White
         btnprintreport.Location = New Point(1234, 12)
         btnprintreport.Name = "btnprintreport"
@@ -1483,7 +1501,7 @@ Partial Class ongoing_details
         ' btnPrintDoc
         ' 
         btnPrintDoc.BackColor = Color.FromArgb(CByte(0), CByte(120), CByte(212))
-        btnPrintDoc.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        btnPrintDoc.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
         btnPrintDoc.ForeColor = Color.White
         btnPrintDoc.Location = New Point(1113, 13)
         btnPrintDoc.Name = "btnPrintDoc"
@@ -1491,6 +1509,7 @@ Partial Class ongoing_details
         btnPrintDoc.TabIndex = 269
         btnPrintDoc.Text = "Print Contract"
         btnPrintDoc.UseVisualStyleBackColor = False
+        btnPrintDoc.Visible = False
         ' 
         ' PrintPreviewDialog1
         ' 
@@ -1505,7 +1524,7 @@ Partial Class ongoing_details
         ' Button3
         ' 
         Button3.BackColor = Color.FromArgb(CByte(0), CByte(120), CByte(212))
-        Button3.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point)
+        Button3.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Button3.ForeColor = Color.White
         Button3.Location = New Point(992, 13)
         Button3.Name = "Button3"
@@ -1513,10 +1532,11 @@ Partial Class ongoing_details
         Button3.TabIndex = 270
         Button3.Text = "Print Area Map"
         Button3.UseVisualStyleBackColor = False
+        Button3.Visible = False
         ' 
         ' ongoing_details
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.White
         ClientSize = New Size(1361, 951)
@@ -1530,7 +1550,7 @@ Partial Class ongoing_details
         Controls.Add(Label16)
         Controls.Add(Panel1)
         Controls.Add(btnnext)
-        Font = New Font("Segoe UI", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
+        Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
         FormBorderStyle = FormBorderStyle.None
         Margin = New Padding(3, 2, 3, 2)
         Name = "ongoing_details"
@@ -1669,4 +1689,6 @@ Partial Class ongoing_details
     Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
+    Friend WithEvents tsmContracts As ToolStripMenuItem
+    Friend WithEvents tsmAreaMap As ToolStripMenuItem
 End Class
