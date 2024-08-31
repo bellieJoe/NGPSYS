@@ -25,9 +25,10 @@ Partial Class formDocExplorer
         dgvDocList = New DataGridView()
         docName = New DataGridViewTextBoxColumn()
         Id = New DataGridViewTextBoxColumn()
+        Url = New DataGridViewTextBoxColumn()
         Button1 = New Button()
         Button2 = New Button()
-        Button3 = New Button()
+        btnView = New Button()
         Button4 = New Button()
         CType(dgvDocList, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -38,13 +39,15 @@ Partial Class formDocExplorer
         dgvDocList.BackgroundColor = Color.WhiteSmoke
         dgvDocList.CellBorderStyle = DataGridViewCellBorderStyle.Raised
         dgvDocList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        dgvDocList.Columns.AddRange(New DataGridViewColumn() {docName, Id})
+        dgvDocList.Columns.AddRange(New DataGridViewColumn() {docName, Id, Url})
         dgvDocList.Location = New Point(12, 12)
         dgvDocList.MultiSelect = False
         dgvDocList.Name = "dgvDocList"
         dgvDocList.ReadOnly = True
+        dgvDocList.RowHeadersVisible = False
         dgvDocList.RowHeadersWidth = 51
         dgvDocList.RowTemplate.Height = 29
+        dgvDocList.SelectionMode = DataGridViewSelectionMode.FullRowSelect
         dgvDocList.Size = New Size(566, 426)
         dgvDocList.TabIndex = 0
         ' 
@@ -65,6 +68,15 @@ Partial Class formDocExplorer
         Id.Visible = False
         Id.Width = 125
         ' 
+        ' Url
+        ' 
+        Url.HeaderText = "Url"
+        Url.MinimumWidth = 6
+        Url.Name = "Url"
+        Url.ReadOnly = True
+        Url.Visible = False
+        Url.Width = 125
+        ' 
         ' Button1
         ' 
         Button1.Location = New Point(463, 452)
@@ -83,18 +95,18 @@ Partial Class formDocExplorer
         Button2.Text = "Delete"
         Button2.UseVisualStyleBackColor = True
         ' 
-        ' Button3
+        ' btnView
         ' 
-        Button3.Location = New Point(221, 452)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(115, 37)
-        Button3.TabIndex = 3
-        Button3.Text = "View"
-        Button3.UseVisualStyleBackColor = True
+        btnView.Location = New Point(100, 452)
+        btnView.Name = "btnView"
+        btnView.Size = New Size(115, 37)
+        btnView.TabIndex = 3
+        btnView.Text = "View"
+        btnView.UseVisualStyleBackColor = True
         ' 
         ' Button4
         ' 
-        Button4.Location = New Point(100, 452)
+        Button4.Location = New Point(221, 452)
         Button4.Name = "Button4"
         Button4.Size = New Size(115, 37)
         Button4.TabIndex = 4
@@ -107,7 +119,7 @@ Partial Class formDocExplorer
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(592, 501)
         Controls.Add(Button4)
-        Controls.Add(Button3)
+        Controls.Add(btnView)
         Controls.Add(Button2)
         Controls.Add(Button1)
         Controls.Add(dgvDocList)
@@ -123,9 +135,10 @@ Partial Class formDocExplorer
 
     Friend WithEvents dgvDocList As DataGridView
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents btnView As Button
+    Friend WithEvents Button4 As Button
     Friend WithEvents docName As DataGridViewTextBoxColumn
     Friend WithEvents Id As DataGridViewTextBoxColumn
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
+    Friend WithEvents Url As DataGridViewTextBoxColumn
 End Class

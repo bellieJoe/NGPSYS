@@ -23,6 +23,7 @@ Partial Class completed_contracts
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Panel2 = New Panel()
+        chkall = New CheckBox()
         Button1 = New Button()
         txtrecords = New TextBox()
         cmborg = New ComboBox()
@@ -51,7 +52,6 @@ Partial Class completed_contracts
         code = New TextBox()
         Label16 = New Label()
         btnprintreport = New Button()
-        chkall = New CheckBox()
         Panel2.SuspendLayout()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -89,6 +89,18 @@ Partial Class completed_contracts
         Panel2.Name = "Panel2"
         Panel2.Size = New Size(1337, 809)
         Panel2.TabIndex = 125
+        ' 
+        ' chkall
+        ' 
+        chkall.AutoSize = True
+        chkall.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        chkall.Location = New Point(849, 105)
+        chkall.Margin = New Padding(3, 2, 3, 2)
+        chkall.Name = "chkall"
+        chkall.Size = New Size(86, 24)
+        chkall.TabIndex = 284
+        chkall.Text = "All Data"
+        chkall.UseVisualStyleBackColor = True
         ' 
         ' Button1
         ' 
@@ -155,6 +167,7 @@ Partial Class completed_contracts
         DataGridView1.Name = "DataGridView1"
         DataGridView1.RowHeadersWidth = 51
         DataGridView1.RowTemplate.Height = 29
+        DataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect
         DataGridView1.Size = New Size(1310, 669)
         DataGridView1.TabIndex = 0
         ' 
@@ -389,18 +402,6 @@ Partial Class completed_contracts
         btnprintreport.TabIndex = 266
         btnprintreport.Text = "Print Report"
         btnprintreport.UseVisualStyleBackColor = False
-        ' 
-        ' chkall
-        ' 
-        chkall.AutoSize = True
-        chkall.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        chkall.Location = New Point(849, 105)
-        chkall.Margin = New Padding(3, 2, 3, 2)
-        chkall.Name = "chkall"
-        chkall.Size = New Size(86, 24)
-        chkall.TabIndex = 284
-        chkall.Text = "All Data"
-        chkall.UseVisualStyleBackColor = True
         ' 
         ' completed_contracts
         ' 

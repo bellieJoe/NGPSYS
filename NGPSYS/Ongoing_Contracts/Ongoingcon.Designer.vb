@@ -63,7 +63,7 @@ Partial Class Ongoingcon
         Label16.ForeColor = Color.FromArgb(CByte(64), CByte(64), CByte(64))
         Label16.Location = New Point(21, 22)
         Label16.Name = "Label16"
-        Label16.Size = New Size(316, 32)
+        Label16.Size = New Size(398, 40)
         Label16.TabIndex = 57
         Label16.Text = "ON - GOING PROJECTS"
         ' 
@@ -108,7 +108,7 @@ Partial Class Ongoingcon
         chkall.Location = New Point(853, 108)
         chkall.Margin = New Padding(3, 2, 3, 2)
         chkall.Name = "chkall"
-        chkall.Size = New Size(72, 22)
+        chkall.Size = New Size(86, 24)
         chkall.TabIndex = 186
         chkall.Text = "All Data"
         chkall.UseVisualStyleBackColor = True
@@ -119,7 +119,7 @@ Partial Class Ongoingcon
         txtrecords.Location = New Point(1253, 40)
         txtrecords.Margin = New Padding(3, 2, 3, 2)
         txtrecords.Name = "txtrecords"
-        txtrecords.Size = New Size(65, 19)
+        txtrecords.Size = New Size(65, 22)
         txtrecords.TabIndex = 185
         txtrecords.TextAlign = HorizontalAlignment.Center
         ' 
@@ -130,7 +130,7 @@ Partial Class Ongoingcon
         Label1.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Label1.Location = New Point(1124, 40)
         Label1.Name = "Label1"
-        Label1.Size = New Size(98, 18)
+        Label1.Size = New Size(123, 20)
         Label1.TabIndex = 184
         Label1.Text = "No. of Records :"
         ' 
@@ -156,6 +156,7 @@ Partial Class Ongoingcon
         DataGridView1.Name = "DataGridView1"
         DataGridView1.RowHeadersWidth = 51
         DataGridView1.RowTemplate.Height = 29
+        DataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect
         DataGridView1.Size = New Size(1310, 669)
         DataGridView1.TabIndex = 0
         ' 
@@ -167,7 +168,7 @@ Partial Class Ongoingcon
         cmborg.Location = New Point(375, 80)
         cmborg.Margin = New Padding(3, 2, 3, 2)
         cmborg.Name = "cmborg"
-        cmborg.Size = New Size(564, 21)
+        cmborg.Size = New Size(564, 24)
         cmborg.TabIndex = 182
         ' 
         ' Label37
@@ -176,7 +177,7 @@ Partial Class Ongoingcon
         Label37.BackColor = Color.White
         Label37.Location = New Point(23, 19)
         Label37.Name = "Label37"
-        Label37.Size = New Size(45, 13)
+        Label37.Size = New Size(55, 16)
         Label37.TabIndex = 118
         Label37.Text = "Label37"
         Label37.Visible = False
@@ -188,7 +189,7 @@ Partial Class Ongoingcon
         chkorg.Location = New Point(374, 107)
         chkorg.Margin = New Padding(3, 2, 3, 2)
         chkorg.Name = "chkorg"
-        chkorg.Size = New Size(116, 22)
+        chkorg.Size = New Size(142, 24)
         chkorg.TabIndex = 181
         chkorg.Text = "By Organization"
         chkorg.UseVisualStyleBackColor = True
@@ -200,7 +201,7 @@ Partial Class Ongoingcon
         Label35.Font = New Font("Trebuchet MS", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Label35.Location = New Point(18, 42)
         Label35.Name = "Label35"
-        Label35.Size = New Size(133, 18)
+        Label35.Size = New Size(167, 20)
         Label35.TabIndex = 108
         Label35.Text = "Project Unique Code :"
         ' 
@@ -209,7 +210,7 @@ Partial Class Ongoingcon
         txtarea.Location = New Point(631, 45)
         txtarea.Margin = New Padding(3, 2, 3, 2)
         txtarea.Name = "txtarea"
-        txtarea.Size = New Size(125, 19)
+        txtarea.Size = New Size(125, 22)
         txtarea.TabIndex = 180
         ' 
         ' chkarea
@@ -219,7 +220,7 @@ Partial Class Ongoingcon
         chkarea.Location = New Point(762, 45)
         chkarea.Margin = New Padding(3, 2, 3, 2)
         chkarea.Name = "chkarea"
-        chkarea.Size = New Size(70, 22)
+        chkarea.Size = New Size(85, 24)
         chkarea.TabIndex = 179
         chkarea.Text = "By Area"
         chkarea.UseVisualStyleBackColor = True
@@ -230,7 +231,7 @@ Partial Class Ongoingcon
         lblrow.BackColor = Color.FromArgb(CByte(240), CByte(244), CByte(247))
         lblrow.Location = New Point(192, 562)
         lblrow.Name = "lblrow"
-        lblrow.Size = New Size(45, 13)
+        lblrow.Size = New Size(55, 16)
         lblrow.TabIndex = 49
         lblrow.Text = "Label18"
         lblrow.Visible = False
@@ -241,7 +242,7 @@ Partial Class Ongoingcon
         Newtxtuniquecode.Location = New Point(192, 42)
         Newtxtuniquecode.Margin = New Padding(3, 2, 3, 2)
         Newtxtuniquecode.Name = "Newtxtuniquecode"
-        Newtxtuniquecode.Size = New Size(32, 19)
+        Newtxtuniquecode.Size = New Size(32, 22)
         Newtxtuniquecode.TabIndex = 109
         Newtxtuniquecode.TextAlign = HorizontalAlignment.Center
         ' 
@@ -252,7 +253,7 @@ Partial Class Ongoingcon
         cmbyear.Location = New Point(18, 80)
         cmbyear.Margin = New Padding(3, 2, 3, 2)
         cmbyear.Name = "cmbyear"
-        cmbyear.Size = New Size(151, 21)
+        cmbyear.Size = New Size(151, 24)
         cmbyear.TabIndex = 174
         ' 
         ' txtnewcode
@@ -260,7 +261,7 @@ Partial Class Ongoingcon
         txtnewcode.Location = New Point(423, 43)
         txtnewcode.Margin = New Padding(3, 2, 3, 2)
         txtnewcode.Name = "txtnewcode"
-        txtnewcode.Size = New Size(65, 19)
+        txtnewcode.Size = New Size(65, 22)
         txtnewcode.TabIndex = 114
         txtnewcode.TextAlign = HorizontalAlignment.Center
         ' 
@@ -272,7 +273,7 @@ Partial Class Ongoingcon
         cmbmuni.Location = New Point(192, 80)
         cmbmuni.Margin = New Padding(3, 2, 3, 2)
         cmbmuni.Name = "cmbmuni"
-        cmbmuni.Size = New Size(151, 21)
+        cmbmuni.Size = New Size(151, 24)
         cmbmuni.TabIndex = 175
         ' 
         ' txtnewuni
@@ -280,7 +281,7 @@ Partial Class Ongoingcon
         txtnewuni.Location = New Point(335, 43)
         txtnewuni.Margin = New Padding(3, 2, 3, 2)
         txtnewuni.Name = "txtnewuni"
-        txtnewuni.Size = New Size(65, 19)
+        txtnewuni.Size = New Size(65, 22)
         txtnewuni.TabIndex = 113
         txtnewuni.TextAlign = HorizontalAlignment.Center
         ' 
@@ -291,7 +292,7 @@ Partial Class Ongoingcon
         chkmuni.Location = New Point(191, 108)
         chkmuni.Margin = New Padding(3, 2, 3, 2)
         chkmuni.Name = "chkmuni"
-        chkmuni.Size = New Size(116, 22)
+        chkmuni.Size = New Size(138, 24)
         chkmuni.TabIndex = 177
         chkmuni.Text = "By Municipality"
         chkmuni.UseVisualStyleBackColor = True
@@ -302,7 +303,7 @@ Partial Class Ongoingcon
         Label36.BackColor = Color.White
         Label36.Location = New Point(230, 45)
         Label36.Name = "Label36"
-        Label36.Size = New Size(10, 13)
+        Label36.Size = New Size(11, 16)
         Label36.TabIndex = 110
         Label36.Text = "-"
         ' 
@@ -313,7 +314,7 @@ Partial Class Ongoingcon
         chkyear.Location = New Point(18, 108)
         chkyear.Margin = New Padding(3, 2, 3, 2)
         chkyear.Name = "chkyear"
-        chkyear.Size = New Size(70, 22)
+        chkyear.Size = New Size(84, 24)
         chkyear.TabIndex = 176
         chkyear.Text = "By Year"
         chkyear.UseVisualStyleBackColor = True
@@ -324,7 +325,7 @@ Partial Class Ongoingcon
         Label33.BackColor = Color.White
         Label33.Location = New Point(406, 46)
         Label33.Name = "Label33"
-        Label33.Size = New Size(10, 13)
+        Label33.Size = New Size(11, 16)
         Label33.TabIndex = 115
         Label33.Text = "-"
         ' 
@@ -334,7 +335,7 @@ Partial Class Ongoingcon
         Label34.BackColor = Color.White
         Label34.Location = New Point(318, 45)
         Label34.Name = "Label34"
-        Label34.Size = New Size(10, 13)
+        Label34.Size = New Size(11, 16)
         Label34.TabIndex = 112
         Label34.Text = "-"
         ' 
@@ -344,7 +345,7 @@ Partial Class Ongoingcon
         newtxtcode.Location = New Point(247, 43)
         newtxtcode.Margin = New Padding(3, 2, 3, 2)
         newtxtcode.Name = "newtxtcode"
-        newtxtcode.Size = New Size(65, 19)
+        newtxtcode.Size = New Size(65, 22)
         newtxtcode.TabIndex = 111
         newtxtcode.TextAlign = HorizontalAlignment.Center
         ' 
@@ -378,7 +379,7 @@ Partial Class Ongoingcon
         newyear.Location = New Point(668, 28)
         newyear.Margin = New Padding(3, 2, 3, 2)
         newyear.Name = "newyear"
-        newyear.Size = New Size(151, 19)
+        newyear.Size = New Size(151, 22)
         newyear.TabIndex = 178
         newyear.Visible = False
         ' 
@@ -387,7 +388,7 @@ Partial Class Ongoingcon
         code.Location = New Point(412, 30)
         code.Margin = New Padding(3, 2, 3, 2)
         code.Name = "code"
-        code.Size = New Size(236, 19)
+        code.Size = New Size(236, 22)
         code.TabIndex = 123
         code.Visible = False
         ' 
@@ -405,7 +406,7 @@ Partial Class Ongoingcon
         ' 
         ' Ongoingcon
         ' 
-        AutoScaleDimensions = New SizeF(6F, 13F)
+        AutoScaleDimensions = New SizeF(8F, 16F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.White
         ClientSize = New Size(1361, 900)
