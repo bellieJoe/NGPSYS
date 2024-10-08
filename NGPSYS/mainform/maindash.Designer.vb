@@ -28,6 +28,7 @@ Partial Class maindash
         btnAdminNav = New Button()
         Button6 = New Button()
         Button8 = New Button()
+        btnMap = New Button()
         Button3 = New Button()
         Button2 = New Button()
         Button1 = New Button()
@@ -56,6 +57,7 @@ Partial Class maindash
         Panel3 = New Panel()
         Panel5 = New Panel()
         Panel6 = New Panel()
+        webViewMap = New Microsoft.Web.WebView2.WinForms.WebView2()
         Panel1.SuspendLayout()
         Panel4.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -64,6 +66,7 @@ Partial Class maindash
         Panel8.SuspendLayout()
         MenuStrip2.SuspendLayout()
         Panel5.SuspendLayout()
+        CType(webViewMap, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Panel1
@@ -73,6 +76,7 @@ Partial Class maindash
         Panel1.Controls.Add(btnAdminNav)
         Panel1.Controls.Add(Button6)
         Panel1.Controls.Add(Button8)
+        Panel1.Controls.Add(btnMap)
         Panel1.Controls.Add(Button3)
         Panel1.Controls.Add(Button2)
         Panel1.Controls.Add(Button1)
@@ -105,7 +109,7 @@ Partial Class maindash
         btnAdminNav.ForeColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
         btnAdminNav.Image = CType(resources.GetObject("btnAdminNav.Image"), Image)
         btnAdminNav.ImageAlign = ContentAlignment.MiddleLeft
-        btnAdminNav.Location = New Point(0, 266)
+        btnAdminNav.Location = New Point(0, 298)
         btnAdminNav.Name = "btnAdminNav"
         btnAdminNav.Padding = New Padding(5, 0, 0, 0)
         btnAdminNav.Size = New Size(189, 35)
@@ -126,7 +130,7 @@ Partial Class maindash
         Button6.ForeColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
         Button6.Image = CType(resources.GetObject("Button6.Image"), Image)
         Button6.ImageAlign = ContentAlignment.MiddleLeft
-        Button6.Location = New Point(0, 231)
+        Button6.Location = New Point(0, 263)
         Button6.Name = "Button6"
         Button6.Padding = New Padding(5, 0, 0, 0)
         Button6.Size = New Size(189, 35)
@@ -155,6 +159,26 @@ Partial Class maindash
         Button8.TextAlign = ContentAlignment.MiddleLeft
         Button8.TextImageRelation = TextImageRelation.ImageBeforeText
         Button8.UseVisualStyleBackColor = True
+        ' 
+        ' btnMap
+        ' 
+        btnMap.Cursor = Cursors.Hand
+        btnMap.Dock = DockStyle.Top
+        btnMap.FlatAppearance.BorderSize = 0
+        btnMap.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(179), CByte(55), CByte(113))
+        btnMap.FlatStyle = FlatStyle.Flat
+        btnMap.ForeColor = Color.FromArgb(CByte(224), CByte(224), CByte(224))
+        btnMap.Image = CType(resources.GetObject("btnMap.Image"), Image)
+        btnMap.ImageAlign = ContentAlignment.MiddleLeft
+        btnMap.Location = New Point(0, 231)
+        btnMap.Name = "btnMap"
+        btnMap.Padding = New Padding(5, 0, 0, 0)
+        btnMap.Size = New Size(189, 32)
+        btnMap.TabIndex = 13
+        btnMap.Text = "  Map"
+        btnMap.TextAlign = ContentAlignment.MiddleLeft
+        btnMap.TextImageRelation = TextImageRelation.ImageBeforeText
+        btnMap.UseVisualStyleBackColor = True
         ' 
         ' Button3
         ' 
@@ -286,14 +310,14 @@ Partial Class maindash
         AddOrganizationToolStripMenuItem.ForeColor = Color.White
         AddOrganizationToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None
         AddOrganizationToolStripMenuItem.Name = "AddOrganizationToolStripMenuItem"
-        AddOrganizationToolStripMenuItem.Size = New Size(12, 20)
+        AddOrganizationToolStripMenuItem.Size = New Size(14, 20)
         ' 
         ' AddUserToolStripMenuItem1
         ' 
         AddUserToolStripMenuItem1.BackColor = Color.FromArgb(CByte(0), CByte(120), CByte(212))
         AddUserToolStripMenuItem1.ForeColor = Color.White
         AddUserToolStripMenuItem1.Name = "AddUserToolStripMenuItem1"
-        AddUserToolStripMenuItem1.Size = New Size(195, 22)
+        AddUserToolStripMenuItem1.Size = New Size(249, 26)
         AddUserToolStripMenuItem1.Text = "Add New User"
         ' 
         ' AddNewContractToolStripMenuItem
@@ -301,7 +325,7 @@ Partial Class maindash
         AddNewContractToolStripMenuItem.BackColor = Color.FromArgb(CByte(0), CByte(120), CByte(212))
         AddNewContractToolStripMenuItem.ForeColor = Color.White
         AddNewContractToolStripMenuItem.Name = "AddNewContractToolStripMenuItem"
-        AddNewContractToolStripMenuItem.Size = New Size(195, 22)
+        AddNewContractToolStripMenuItem.Size = New Size(249, 26)
         AddNewContractToolStripMenuItem.Text = "Add New Project"
         ' 
         ' AddOrganizationToolStripMenuItem1
@@ -309,7 +333,7 @@ Partial Class maindash
         AddOrganizationToolStripMenuItem1.BackColor = Color.FromArgb(CByte(0), CByte(120), CByte(212))
         AddOrganizationToolStripMenuItem1.ForeColor = Color.White
         AddOrganizationToolStripMenuItem1.Name = "AddOrganizationToolStripMenuItem1"
-        AddOrganizationToolStripMenuItem1.Size = New Size(195, 22)
+        AddOrganizationToolStripMenuItem1.Size = New Size(249, 26)
         AddOrganizationToolStripMenuItem1.Text = "Add New Organization"
         ' 
         ' AddComponentToolStripMenuItem
@@ -317,7 +341,7 @@ Partial Class maindash
         AddComponentToolStripMenuItem.BackColor = Color.FromArgb(CByte(0), CByte(120), CByte(212))
         AddComponentToolStripMenuItem.ForeColor = Color.White
         AddComponentToolStripMenuItem.Name = "AddComponentToolStripMenuItem"
-        AddComponentToolStripMenuItem.Size = New Size(195, 22)
+        AddComponentToolStripMenuItem.Size = New Size(249, 26)
         AddComponentToolStripMenuItem.Text = "Add New Component"
         ' 
         ' AddCommodityToolStripMenuItem
@@ -325,7 +349,7 @@ Partial Class maindash
         AddCommodityToolStripMenuItem.BackColor = Color.FromArgb(CByte(0), CByte(120), CByte(212))
         AddCommodityToolStripMenuItem.ForeColor = Color.White
         AddCommodityToolStripMenuItem.Name = "AddCommodityToolStripMenuItem"
-        AddCommodityToolStripMenuItem.Size = New Size(195, 22)
+        AddCommodityToolStripMenuItem.Size = New Size(249, 26)
         AddCommodityToolStripMenuItem.Text = "Add New Commodity"
         ' 
         ' AddToolStripMenuItem
@@ -333,7 +357,7 @@ Partial Class maindash
         AddToolStripMenuItem.BackColor = Color.FromArgb(CByte(0), CByte(120), CByte(212))
         AddToolStripMenuItem.ForeColor = Color.White
         AddToolStripMenuItem.Name = "AddToolStripMenuItem"
-        AddToolStripMenuItem.Size = New Size(195, 22)
+        AddToolStripMenuItem.Size = New Size(249, 26)
         AddToolStripMenuItem.Text = "Add New Species"
         ' 
         ' AddNewTenureToolStripMenuItem
@@ -341,7 +365,7 @@ Partial Class maindash
         AddNewTenureToolStripMenuItem.BackColor = Color.FromArgb(CByte(0), CByte(120), CByte(212))
         AddNewTenureToolStripMenuItem.ForeColor = Color.White
         AddNewTenureToolStripMenuItem.Name = "AddNewTenureToolStripMenuItem"
-        AddNewTenureToolStripMenuItem.Size = New Size(195, 22)
+        AddNewTenureToolStripMenuItem.Size = New Size(249, 26)
         AddNewTenureToolStripMenuItem.Text = "Add New Tenure"
         ' 
         ' Panel8
@@ -371,14 +395,14 @@ Partial Class maindash
         ToolStripMenuItem1.ForeColor = Color.White
         ToolStripMenuItem1.ImageScaling = ToolStripItemImageScaling.None
         ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        ToolStripMenuItem1.Size = New Size(12, 20)
+        ToolStripMenuItem1.Size = New Size(14, 20)
         ' 
         ' ToolStripMenuItem2
         ' 
         ToolStripMenuItem2.BackColor = Color.FromArgb(CByte(0), CByte(120), CByte(212))
         ToolStripMenuItem2.ForeColor = Color.White
         ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        ToolStripMenuItem2.Size = New Size(145, 22)
+        ToolStripMenuItem2.Size = New Size(182, 26)
         ToolStripMenuItem2.Text = "User"
         ' 
         ' ToolStripMenuItem3
@@ -386,7 +410,7 @@ Partial Class maindash
         ToolStripMenuItem3.BackColor = Color.FromArgb(CByte(0), CByte(120), CByte(212))
         ToolStripMenuItem3.ForeColor = Color.White
         ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-        ToolStripMenuItem3.Size = New Size(145, 22)
+        ToolStripMenuItem3.Size = New Size(182, 26)
         ToolStripMenuItem3.Text = "Organization"
         ' 
         ' ToolStripMenuItem4
@@ -394,7 +418,7 @@ Partial Class maindash
         ToolStripMenuItem4.BackColor = Color.FromArgb(CByte(0), CByte(120), CByte(212))
         ToolStripMenuItem4.ForeColor = Color.White
         ToolStripMenuItem4.Name = "ToolStripMenuItem4"
-        ToolStripMenuItem4.Size = New Size(145, 22)
+        ToolStripMenuItem4.Size = New Size(182, 26)
         ToolStripMenuItem4.Text = "Component"
         ' 
         ' ToolStripMenuItem5
@@ -402,7 +426,7 @@ Partial Class maindash
         ToolStripMenuItem5.BackColor = Color.FromArgb(CByte(0), CByte(120), CByte(212))
         ToolStripMenuItem5.ForeColor = Color.White
         ToolStripMenuItem5.Name = "ToolStripMenuItem5"
-        ToolStripMenuItem5.Size = New Size(145, 22)
+        ToolStripMenuItem5.Size = New Size(182, 26)
         ToolStripMenuItem5.Text = "Commodity"
         ' 
         ' ToolStripMenuItem6
@@ -410,7 +434,7 @@ Partial Class maindash
         ToolStripMenuItem6.BackColor = Color.FromArgb(CByte(0), CByte(120), CByte(212))
         ToolStripMenuItem6.ForeColor = Color.White
         ToolStripMenuItem6.Name = "ToolStripMenuItem6"
-        ToolStripMenuItem6.Size = New Size(145, 22)
+        ToolStripMenuItem6.Size = New Size(182, 26)
         ToolStripMenuItem6.Text = "Species"
         ' 
         ' Panel3
@@ -439,11 +463,24 @@ Partial Class maindash
         Panel6.Size = New Size(1550, 884)
         Panel6.TabIndex = 0
         ' 
+        ' webViewMap
+        ' 
+        webViewMap.AllowExternalDrop = True
+        webViewMap.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        webViewMap.CreationProperties = Nothing
+        webViewMap.DefaultBackgroundColor = Color.White
+        webViewMap.Location = New Point(189, 32)
+        webViewMap.Name = "webViewMap"
+        webViewMap.Size = New Size(1361, 852)
+        webViewMap.TabIndex = 0
+        webViewMap.ZoomFactor = 1.0R
+        ' 
         ' maindash
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(8.0F, 19.0F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1550, 932)
+        Controls.Add(webViewMap)
         Controls.Add(Panel5)
         Controls.Add(Panel3)
         Controls.Add(Panel1)
@@ -464,6 +501,7 @@ Partial Class maindash
         MenuStrip2.ResumeLayout(False)
         MenuStrip2.PerformLayout()
         Panel5.ResumeLayout(False)
+        CType(webViewMap, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -500,4 +538,6 @@ Partial Class maindash
     Friend WithEvents ToolStripMenuItem6 As ToolStripMenuItem
     Friend WithEvents btnAdminNav As Button
     Friend WithEvents Button5 As Button
+    Friend WithEvents btnMap As Button
+    Friend WithEvents webViewMap As Microsoft.Web.WebView2.WinForms.WebView2
 End Class

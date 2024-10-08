@@ -1,4 +1,5 @@
 ﻿Imports System.ComponentModel
+Imports System.IO
 Imports System.Runtime.CompilerServices
 Imports System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar
 
@@ -15,9 +16,13 @@ Public Class maindash
         Ongoingcon.Close()
         TICdashboard.Close()
         Year2_dashboard.Close()
+        webViewMap.Visible = False
     End Sub
 
     Private Sub maindash_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+
+
         If personnel = 2 Then
             btnAdminNav.Visible = True
         Else
@@ -40,6 +45,18 @@ Public Class maindash
             .BringToFront()
             .Show()
         End With
+
+        LoadMap()
+    End Sub
+
+    Private Sub LoadMap()
+        ' Use relative path to load the HTML file
+        Dim relativePath As String = "Map.html"
+        Dim SolutionPath = Directory.GetParent(Application.StartupPath).Parent.Parent.Parent.FullName
+        Dim fullPath As String = System.IO.Path.Combine(SolutionPath + "\mainform", relativePath)
+
+        ' Navigate to the HTML file using the full path
+        webViewMap.Source = New Uri(fullPath)
     End Sub
 
 
@@ -55,6 +72,7 @@ Public Class maindash
         ongoing_details.Close()
         TICdashboard.Close()
         Year2_dashboard.Close()
+        webViewMap.Visible = False
     End Sub
 
 
@@ -75,10 +93,11 @@ Public Class maindash
         ongoing_details.Close()
         TICdashboard.Close()
         Year2_dashboard.Close()
+        webViewMap.Visible = False
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-
+        webViewMap.Visible = False
         If personnel = 0 Or personnel = 1 Then
 
 
@@ -138,7 +157,7 @@ Public Class maindash
 
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles btnAdminNav.Click
-
+        webViewMap.Visible = False
 
         If MenuStrip2.Items.ContainsKey("ToolStripMenuItem1") Then
             Dim menuItem As ToolStripMenuItem = DirectCast(MenuStrip2.Items("ToolStripMenuItem1"), ToolStripMenuItem)
@@ -212,6 +231,15 @@ Public Class maindash
         If result = DialogResult.OK Then
             Form1.Show()
         End If
+    End Sub
+
+    Private Sub btnMap_Click(sender As Object, e As EventArgs) Handles btnMap.Click
+        dashboard.Close()
+        ongoing_details.Close()
+        Ongoingcon.Close()
+        TICdashboard.Close()
+        Year2_dashboard.Close()
+        webViewMap.Visible = True
     End Sub
 End Class
 
