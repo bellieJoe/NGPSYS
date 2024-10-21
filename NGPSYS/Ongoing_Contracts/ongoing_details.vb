@@ -1381,16 +1381,54 @@ Public Class ongoing_details
     End Sub
 
     Private Sub tsmContracts_Click(sender As Object, e As EventArgs) Handles tsmContracts.Click
-        formDocExplorer.isContract = True
-        formDocExplorer.FolderLocation = "\\192.168.1.84\Users\Public\ngpsys\storage\contracts\"
-        formDocExplorer.Text = "Contracts"
-        formDocExplorer.ShowDialog()
+        'formDocExplorer.isContract = True
+        'formDocExplorer.FolderLocation = "C:\\ngpsys\storage\contracts\"
+        'formDocExplorer.Text = "Contracts"
+        'formDocExplorer.ShowDialog()
+        'WriteLine()
+
     End Sub
 
     Private Sub tsmAreaMap_Click(sender As Object, e As EventArgs) Handles tsmAreaMap.Click
 
+        'formDocExplorer.isContract = False
+        'formDocExplorer.FolderLocation = "C:\\\ngpsys\storage\area_map\"
+        'formDocExplorer.Text = "Area Map"
+        'formDocExplorer.ShowDialog()
+    End Sub
+
+    Private Sub UploadContractToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UploadContractToolStripMenuItem.Click
+        formDocExplorer.isContract = True
+        formDocExplorer.FolderLocation = "C:\\ngpsys\storage\contracts\"
+        formDocExplorer.Text = "Contracts"
+        formDocExplorer.ShowDialog()
+    End Sub
+
+    Private Sub MaintenanceToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles MaintenanceToolStripMenuItem1.Click
+
+    End Sub
+
+    Private Sub tsmContracts_DropDownItemClicked(sender As Object, e As ToolStripItemClickedEventArgs) Handles tsmContracts.DropDownItemClicked
+
+    End Sub
+
+    Private Sub PrintViewToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PrintViewToolStripMenuItem.Click
+        formDocExplorer.isContract = True
+        formDocExplorer.FolderLocation = "C:\\ngpsys\storage\contracts\"
+        formDocExplorer.Text = "Contracts"
+        formDocExplorer.ShowDialog()
+    End Sub
+
+    Private Sub UploadAreaMapToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UploadAreaMapToolStripMenuItem.Click
         formDocExplorer.isContract = False
-        formDocExplorer.FolderLocation = "\\192.168.1.84\Users\Public\ngpsys\storage\area_map\"
+        formDocExplorer.FolderLocation = "C:\\\ngpsys\storage\area_map\"
+        formDocExplorer.Text = "Area Map"
+        formDocExplorer.ShowDialog()
+    End Sub
+
+    Private Sub AreaMapToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AreaMapToolStripMenuItem.Click
+        formDocExplorer.isContract = False
+        formDocExplorer.FolderLocation = "C:\\\ngpsys\storage\area_map\"
         formDocExplorer.Text = "Area Map"
         formDocExplorer.ShowDialog()
     End Sub

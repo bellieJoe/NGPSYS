@@ -86,7 +86,13 @@ Partial Class ongoing_details
         NoOfSitesToolStripMenuItem = New ToolStripMenuItem()
         addpoly = New ToolStripMenuItem()
         tsmContracts = New ToolStripMenuItem()
+        UploadContractToolStripMenuItem = New ToolStripMenuItem()
+        PrintViewToolStripMenuItem = New ToolStripMenuItem()
         tsmAreaMap = New ToolStripMenuItem()
+        UploadAreaMapToolStripMenuItem = New ToolStripMenuItem()
+        AreaMapToolStripMenuItem = New ToolStripMenuItem()
+        UploadGeoTagImageToolStripMenuItem = New ToolStripMenuItem()
+        GeotagImageToolStripMenuItem = New ToolStripMenuItem()
         Label2 = New Label()
         txtuniquecode = New TextBox()
         condistricttxt = New TextBox()
@@ -835,17 +841,55 @@ Partial Class ongoing_details
         ' 
         ' tsmContracts
         ' 
+        tsmContracts.DropDownItems.AddRange(New ToolStripItem() {UploadContractToolStripMenuItem, PrintViewToolStripMenuItem})
         tsmContracts.ForeColor = Color.White
         tsmContracts.Name = "tsmContracts"
-        tsmContracts.Size = New Size(90, 24)
-        tsmContracts.Text = "Contracts"
+        tsmContracts.Size = New Size(87, 24)
+        tsmContracts.Text = " Contract"
+        ' 
+        ' UploadContractToolStripMenuItem
+        ' 
+        UploadContractToolStripMenuItem.Name = "UploadContractToolStripMenuItem"
+        UploadContractToolStripMenuItem.Size = New Size(231, 26)
+        UploadContractToolStripMenuItem.Text = "Upload Contract"
+        ' 
+        ' PrintViewToolStripMenuItem
+        ' 
+        PrintViewToolStripMenuItem.Name = "PrintViewToolStripMenuItem"
+        PrintViewToolStripMenuItem.Size = New Size(231, 26)
+        PrintViewToolStripMenuItem.Text = "Print/View Contract"
         ' 
         ' tsmAreaMap
         ' 
+        tsmAreaMap.DropDownItems.AddRange(New ToolStripItem() {UploadAreaMapToolStripMenuItem, AreaMapToolStripMenuItem, UploadGeoTagImageToolStripMenuItem, GeotagImageToolStripMenuItem})
         tsmAreaMap.ForeColor = Color.White
         tsmAreaMap.Name = "tsmAreaMap"
         tsmAreaMap.Size = New Size(91, 24)
         tsmAreaMap.Text = "Area Map"
+        ' 
+        ' UploadAreaMapToolStripMenuItem
+        ' 
+        UploadAreaMapToolStripMenuItem.Name = "UploadAreaMapToolStripMenuItem"
+        UploadAreaMapToolStripMenuItem.Size = New Size(247, 26)
+        UploadAreaMapToolStripMenuItem.Text = "Upload Area Map"
+        ' 
+        ' AreaMapToolStripMenuItem
+        ' 
+        AreaMapToolStripMenuItem.Name = "AreaMapToolStripMenuItem"
+        AreaMapToolStripMenuItem.Size = New Size(247, 26)
+        AreaMapToolStripMenuItem.Text = "Area Map"
+        ' 
+        ' UploadGeoTagImageToolStripMenuItem
+        ' 
+        UploadGeoTagImageToolStripMenuItem.Name = "UploadGeoTagImageToolStripMenuItem"
+        UploadGeoTagImageToolStripMenuItem.Size = New Size(247, 26)
+        UploadGeoTagImageToolStripMenuItem.Text = "Upload GeoTag Image"
+        ' 
+        ' GeotagImageToolStripMenuItem
+        ' 
+        GeotagImageToolStripMenuItem.Name = "GeotagImageToolStripMenuItem"
+        GeotagImageToolStripMenuItem.Size = New Size(247, 26)
+        GeotagImageToolStripMenuItem.Text = "Geotag Image"
         ' 
         ' Label2
         ' 
@@ -1691,4 +1735,10 @@ Partial Class ongoing_details
     Friend WithEvents Button3 As Button
     Friend WithEvents tsmContracts As ToolStripMenuItem
     Friend WithEvents tsmAreaMap As ToolStripMenuItem
+    Friend WithEvents UploadContractToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents UploadAreaMapToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents AreaMapToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents UploadGeoTagImageToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents GeotagImageToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PrintViewToolStripMenuItem As ToolStripMenuItem
 End Class
